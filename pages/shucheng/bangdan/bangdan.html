@@ -1,119 +1,110 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width"/>
-		<title></title>
-		<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<link rel="stylesheet" href="css/bangdan.css" />
-	</head>
-	<body>
-		<div class="top">
-			<ul class="top-content">
-				<li class="top-lis">
-					<div class="cir"><a href=""><h1>精选</h1><span>selector</span></a></div>
-				</li>
-				<li class="top-xian1">
-					<div class="cir1"></div>
-					<div class="cir2"></div>
-				</li>
-				<li class="top-lis">
-					<div class="cir"><a href=""><h1>榜单</h1><span>list</span></a></div>
-				</li>
-				<li class="top-xian2">
-					<div class="cir1"></div>
-					<div class="cir2"></div>
-				</li>
-				<li class="top-lis">
-					<div class="cir"><a href=""><h1>分类</h1><span>clsaaify</span></a></div>
-				</li>
-			</ul>
-			<div class="circle1">
-				<div class="search"></div>
-			</div>
+<div class='bangdan'>
+	<div class="top">
+		<ul class="top-content">
+			<li class="top-lis">
+				<div class="cir"><a href="/shucheng"><h1>精选</h1><span>selector</span></a></div>
+			</li>
+			<li class="top-xian1">
+				<div class="cir1"></div>
+				<div class="cir2"></div>
+			</li>
+			<li class="top-lis">
+				<div class="cir"><a href="#/bangdan"><h1>榜单</h1><span>list</span></a></div>
+			</li>
+			<li class="top-xian2">
+				<div class="cir1"></div>
+				<div class="cir2"></div>
+			</li>
+			<li class="top-lis">
+				<div class="cir"><a href="#/fenlei"><h1>分类</h1><span>clsaaify</span></a></div>
+			</li>
+		</ul>
+		<div class="circle1">
+			<div class="search"></div>
 		</div>
-		<div class="foot">
-			<div class="foot-lis">
-				<i></i>
-				<span>书架</span>
-			</div>
-			<div class="foot-lis">
-				<i></i>
-				<span>书城</span>
-			</div>
-			<div class="foot-lis">
-				<i></i>
-				<span>我的</span>
-			</div>
+	</div>
+	<div class="foot">
+		<div class="foot-lis">
+			<i></i>
+			<span>书架</span>
 		</div>
-	    <div class="bang-lis">
-	    	<div class="bang-con">
-	    		<div class="bang-left">
-	    		   <h1>新书·阅读榜单</h1>
-	    		   <span>New book reading list</span>
-	    		   <em></em>
-	    		   <p>美味的食物贵的</p>
-	    		   <p>有山珍海味便宜的有街边小吃</p>
-	    		   <p>美食是分贵</p>
-		    	</div>
-		    	<div class="bang-right">
-		    	    <div><span></span>英国脱欧:明智or愚蠢</div>
-		    	    <div><span></span>向着光亮那方【精装】</div>
-		    	    <div><span></span>月童度河【精装】</div>
-		    	</div>
+		<div class="foot-lis">
+			<i></i>
+			<span>书城</span>
+		</div>
+		<div class="foot-lis">
+			<i></i>
+			<span>我的</span>
+		</div>
+	</div>
+    <div class="bang-lis">
+    	<div class="bang-con">
+    		<div class="bang-left">
+    		   <h1>新书·阅读榜单</h1>
+    		   <span>New book reading list</span>
+    		   <em></em>
+    		   <p>美味的食物贵的</p>
+    		   <p>有山珍海味便宜的有街边小吃</p>
+    		   <p>美食是分贵</p>
 	    	</div>
-	    </div>
-	     <div class="bang-lis">
-	    	<div class="bang-con">
-	    		<div class="bang-left">
-	    		   <h1>热门·阅读榜单</h1>
-	    		   <span>New book reading list</span>
-	    		   <em></em>
-	    		   <p>美味的食物贵的</p>
-	    		   <p>有山珍海味便宜的有街边小吃</p>
-	    		   <p>美食是分贵</p>
-		    	</div>
-		    	<div class="bang-right">
-		    	    <div><span></span>英国脱欧:明智or愚蠢</div>
-		    	    <div><span></span>向着光亮那方【精装】</div>
-		    	    <div><span></span>月童度河【精装】</div>
-		    	</div>
+	    	<div class="bang-right">
+	    	    <div><span></span>英国脱欧:明智or愚蠢</div>
+	    	    <div><span></span>向着光亮那方【精装】</div>
+	    	    <div><span></span>月童度河【精装】</div>
 	    	</div>
-	    </div>
-	     <div class="bang-lis">
-	    	<div class="bang-con">
-	    		<div class="bang-left">
-	    		   <h1>社会·科学榜单</h1>
-	    		   <span>New book reading list</span>
-	    		   <em></em>
-	    		   <p>美味的食物贵的</p>
-	    		   <p>有山珍海味便宜的有街边小吃</p>
-	    		   <p>美食是分贵</p>
-		    	</div>
-		    	<div class="bang-right">
-		    	    <div><span></span>英国脱欧:明智or愚蠢</div>
-		    	    <div><span></span>向着光亮那方【精装】</div>
-		    	    <div><span></span>月童度河【精装】</div>
-		    	</div>
+    	</div>
+    </div>
+     <div class="bang-lis">
+    	<div class="bang-con">
+    		<div class="bang-left">
+    		   <h1>热门·阅读榜单</h1>
+    		   <span>New book reading list</span>
+    		   <em></em>
+    		   <p>美味的食物贵的</p>
+    		   <p>有山珍海味便宜的有街边小吃</p>
+    		   <p>美食是分贵</p>
 	    	</div>
-	    </div>
-	     <div class="bang-lis">
-	    	<div class="bang-con">
-	    		<div class="bang-left">
-	    		   <h1>政治·法律榜单</h1>
-	    		   <span>New book reading list</span>
-	    		   <em></em>
-	    		   <p>美味的食物贵的</p>
-	    		   <p>有山珍海味便宜的有街边小吃</p>
-	    		   <p>美食是分贵</p>
-		    	</div>
-		    	<div class="bang-right">
-		    	    <div><span></span>英国脱欧:明智or愚蠢</div>
-		    	    <div><span></span>向着光亮那方【精装】</div>
-		    	    <div><span></span>月童度河【精装】</div>
-		    	</div>
+	    	<div class="bang-right">
+	    	    <div><span></span>英国脱欧:明智or愚蠢</div>
+	    	    <div><span></span>向着光亮那方【精装】</div>
+	    	    <div><span></span>月童度河【精装】</div>
 	    	</div>
-	    </div>
-	</body>
-</html>
+    	</div>
+    </div>
+     <div class="bang-lis">
+    	<div class="bang-con">
+    		<div class="bang-left">
+    		   <h1>社会·科学榜单</h1>
+    		   <span>New book reading list</span>
+    		   <em></em>
+    		   <p>美味的食物贵的</p>
+    		   <p>有山珍海味便宜的有街边小吃</p>
+    		   <p>美食是分贵</p>
+	    	</div>
+	    	<div class="bang-right">
+	    	    <div><span></span>英国脱欧:明智or愚蠢</div>
+	    	    <div><span></span>向着光亮那方【精装】</div>
+	    	    <div><span></span>月童度河【精装】</div>
+	    	</div>
+    	</div>
+    </div>
+     <div class="bang-lis">
+    	<div class="bang-con">
+    		<div class="bang-left">
+    		   <h1>政治·法律榜单</h1>
+    		   <span>New book reading list</span>
+    		   <em></em>
+    		   <p>美味的食物贵的</p>
+    		   <p>有山珍海味便宜的有街边小吃</p>
+    		   <p>美食是分贵</p>
+	    	</div>
+	    	<div class="bang-right">
+	    	    <div><span></span>英国脱欧:明智or愚蠢</div>
+	    	    <div><span></span>向着光亮那方【精装】</div>
+	    	    <div><span></span>月童度河【精装】</div>
+	    	</div>
+    	</div>
+    </div>
+</div>
+		
+

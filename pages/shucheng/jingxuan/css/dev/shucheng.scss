@@ -259,6 +259,7 @@
         height: auto;
         overflow: hidden;
         margin: 0 auto;
+        margin-bottom: 1rem;
         .book-lis{
             margin-top:0.3rem;
             width:33.33333%;
@@ -267,7 +268,8 @@
                 margin: 0 auto;
                 display: block;
                 width: 1.8rem;
-                img{
+                text-decoration: none;
+                .imgs{
                 width: 100%;
                 height: 2.55rem;
                 }
@@ -284,6 +286,14 @@
                     font-style: normal;
                 }
             }
+        }
+        .book-lis:nth-child(1) .imgs,.book-lis:nth-child(2) .imgs,.book-lis:nth-child(3) .imgs{
+                background: url($img-url+"book.png");
+                background-size: cover;
+        }
+         .book-lis:nth-child(4) .imgs,.book-lis:nth-child(5) .imgs,.book-lis:nth-child(6) .imgs{
+                background: url($img-url+"book2.png");
+                background-size: cover;
         }
     }
 }

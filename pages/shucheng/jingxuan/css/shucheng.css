@@ -299,7 +299,8 @@ img {
   .newjia .book-1 {
     height: auto;
     overflow: hidden;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 1rem; }
     .newjia .book-1 .book-lis {
       margin-top: 0.3rem;
       width: 33.33333%;
@@ -307,8 +308,9 @@ img {
       .newjia .book-1 .book-lis a {
         margin: 0 auto;
         display: block;
-        width: 1.8rem; }
-        .newjia .book-1 .book-lis a img {
+        width: 1.8rem;
+        text-decoration: none; }
+        .newjia .book-1 .book-lis a .imgs {
           width: 100%;
           height: 2.55rem; }
         .newjia .book-1 .book-lis a span {
@@ -321,3 +323,9 @@ img {
           font-size: 0.18rem;
           color: #999999;
           font-style: normal; }
+    .newjia .book-1 .book-lis:nth-child(1) .imgs, .newjia .book-1 .book-lis:nth-child(2) .imgs, .newjia .book-1 .book-lis:nth-child(3) .imgs {
+      background: url("../img/book.png");
+      background-size: cover; }
+    .newjia .book-1 .book-lis:nth-child(4) .imgs, .newjia .book-1 .book-lis:nth-child(5) .imgs, .newjia .book-1 .book-lis:nth-child(6) .imgs {
+      background: url("../img/book2.png");
+      background-size: cover; }
