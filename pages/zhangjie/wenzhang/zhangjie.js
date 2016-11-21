@@ -1,4 +1,9 @@
-
+		
+app.controller("wenzhangCtrl",["$scope",function($scope){
+	$scope.a=12;
+		
+	
+}] )
 	app.directive("dianJi",[function(){
 		return{
 			restrict:'AE',
@@ -62,9 +67,3 @@
 	
 	
 	
-	
-app.controller("wenzhangCtrl",["$scope",function($scope){
-	$scope.a=12;
-		
-	
-}] )

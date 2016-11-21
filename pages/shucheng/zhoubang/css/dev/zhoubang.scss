@@ -4,6 +4,7 @@
     height: 1rem;
     background:#2BA6DC;
     .circle{
+        z-index: 20;
         width: 0.44rem;
         height: 0.44rem;
         border:0.02rem solid #076CBE;
@@ -12,7 +13,12 @@
         background-size:auto 0.17rem;
         background-position:0.15rem 0.12rem;
         @include tb;
-        left:0.25rem;  
+        left:0.25rem; 
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        } 
     }
     .circle1{
         width: 0.44rem;
@@ -112,7 +118,7 @@
                 }
             } 
         }
-         li:nth-child(3) .cir{
+         .zhoucir{
                     background: url($img-url+"bg2.png");
                     background-size: cover; 
                 }
