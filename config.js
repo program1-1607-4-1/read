@@ -65,6 +65,12 @@ app.config(["$routeProvider",function($routeProvider){
 	}).when("/fenlei",{
 		templateUrl:"pages/shucheng/fenlei/fenlei.html",
 		controller:"fenleiCtrl"
+	}).when("/newbook",{
+		templateUrl:"pages/shucheng/zhoubang/zhoubang.html",
+		controller:"zhoubangCtrl"
+	}).when("/xianxia",{
+		templateUrl:"pages/shucheng/redu/redu.html",
+		controller:"reduCtrl"
 	})
 }])
 

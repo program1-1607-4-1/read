@@ -43,11 +43,11 @@ img {
 /*宽高:@include wh($w,$h)*/
 /*调试所用边框：@include border*/
 /*图片居中：@include img-center*/
-.top {
+.fenlei .top {
   height: 1rem;
   width: 100%;
   background: #29a6dc; }
-  .top .circle1 {
+  .fenlei .top .circle1 {
     width: 0.44rem;
     height: 0.44rem;
     border: 0.02rem solid #076CBE;
@@ -58,18 +58,22 @@ img {
     bottom: 0;
     margin: auto;
     right: 0.25rem; }
-    .top .circle1 .search {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      width: 0.25rem;
-      height: 0.22rem;
-      background: #fff url("../img/search.png") no-repeat;
-      background-size: cover; }
-  .top .top-content {
+    .fenlei .top .circle1 a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .fenlei .top .circle1 a .search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 0.25rem;
+        height: 0.22rem;
+        background: #fff url("../img/search.png") no-repeat;
+        background-size: cover; }
+  .fenlei .top .top-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,11 +85,11 @@ img {
     border-radius: 0.42rem;
     background: #293340;
     padding-left: 1px; }
-    .top .top-content .top-lis {
+    .fenlei .top .top-content .top-lis {
       width: 33.33333%;
       float: left;
       height: 100%; }
-      .top .top-content .top-lis .cir {
+      .fenlei .top .top-content .top-lis .cir {
         position: absolute;
         top: 0;
         left: 0;
@@ -94,11 +98,11 @@ img {
         margin: auto;
         width: 1.65rem;
         height: 0.7rem; }
-        .top .top-content .top-lis .cir a {
+        .fenlei .top .top-content .top-lis .cir a {
           display: block;
           width: 100%;
           height: 100%; }
-          .top .top-content .top-lis .cir a h1 {
+          .fenlei .top .top-content .top-lis .cir a h1 {
             position: absolute;
             left: 0;
             right: 0;
@@ -107,7 +111,7 @@ img {
             font-size: 0.24rem;
             color: #FFFFFF;
             margin-top: 0.13rem; }
-          .top .top-content .top-lis .cir a span {
+          .fenlei .top .top-content .top-lis .cir a span {
             position: absolute;
             left: 0;
             right: 0;
@@ -118,10 +122,10 @@ img {
             text-align: center;
             text-transform: uppercase;
             bottom: 0; }
-    .top .top-content li:nth-child(5) .cir {
-      background: url("../img/bg2.png");
-      background-size: cover; }
-    .top .top-content .top-xian1 {
+      .fenlei .top .top-content .top-lis .thirdcir {
+        background: url("../img/bg2.png");
+        background-size: cover; }
+    .fenlei .top .top-content .top-xian1 {
       height: 0.57rem;
       width: 1px;
       position: relative;
@@ -132,7 +136,7 @@ img {
       bottom: 0;
       margin: auto;
       left: 33%; }
-      .top .top-content .top-xian1 .cir1 {
+      .fenlei .top .top-content .top-xian1 .cir1 {
         width: 3px;
         height: 3px;
         border-radius: 50%;
@@ -140,7 +144,7 @@ img {
         top: -2px;
         left: -1px;
         background: #EFEFEF; }
-      .top .top-content .top-xian1 .cir2 {
+      .fenlei .top .top-content .top-xian1 .cir2 {
         width: 3px;
         height: 3px;
         border-radius: 50%;
@@ -148,7 +152,7 @@ img {
         bottom: -2px;
         left: -1px;
         background: #EFEFEF; }
-    .top .top-content .top-xian2 {
+    .fenlei .top .top-content .top-xian2 {
       height: 0.57rem;
       width: 1px;
       position: relative;
@@ -159,7 +163,7 @@ img {
       bottom: 0;
       margin: auto;
       right: 33%; }
-      .top .top-content .top-xian2 .cir1 {
+      .fenlei .top .top-content .top-xian2 .cir1 {
         width: 3px;
         height: 3px;
         border-radius: 50%;
@@ -167,7 +171,7 @@ img {
         top: -2px;
         left: -1px;
         background: #EFEFEF; }
-      .top .top-content .top-xian2 .cir2 {
+      .fenlei .top .top-content .top-xian2 .cir2 {
         width: 3px;
         height: 3px;
         border-radius: 50%;
@@ -176,7 +180,7 @@ img {
         left: -1px;
         background: #EFEFEF; }
 
-.foot {
+.fenlei .foot-shucheng {
   width: 100%;
   height: 1rem;
   position: fixed;
@@ -185,41 +189,48 @@ img {
   z-index: 20;
   background: url("../img/bg5.png");
   background-size: cover; }
-  .foot .foot-lis {
+  .fenlei .foot-shucheng .foot-lis {
     width: 33.33333%;
     height: 100%;
     border-right: 1px solid #717171;
     float: left; }
-    .foot .foot-lis i {
+    .fenlei .foot-shucheng .foot-lis a {
       display: block;
-      width: 0.45rem;
-      height: 0.45rem;
-      margin: 0 auto;
-      margin-top: 0.1rem; }
-    .foot .foot-lis span {
-      display: block;
-      font-size: 0.24rem;
-      color: #646567;
-      margin: 0 auto;
-      text-align: center; }
-  .foot .foot-lis:nth-child(3) {
+      width: 100%;
+      height: 100%; }
+      .fenlei .foot-shucheng .foot-lis a i {
+        display: block;
+        width: 0.45rem;
+        height: 0.45rem;
+        margin: 0 auto;
+        margin-top: 0.1rem; }
+      .fenlei .foot-shucheng .foot-lis a span {
+        display: block;
+        font-size: 0.24rem;
+        color: #646567;
+        margin: 0 auto;
+        text-align: center; }
+  .fenlei .foot-shucheng .foot-lis:nth-child(3) {
     border: none; }
-  .foot .foot-lis:nth-child(1) i {
+  .fenlei .foot-shucheng .foot-lis:nth-child(1) i {
     background: url("../img/icon3.png");
     background-position: 0 0;
     background-size: cover; }
-  .foot .foot-lis:nth-child(2) i {
+  .fenlei .foot-shucheng .foot-lis:nth-child(2) i {
     background: url("../img/icon3.png");
     background-position: -1.05rem 0;
     background-size: cover; }
-  .foot .foot-lis:nth-child(2) span {
+  .fenlei .foot-shucheng .foot-lis:nth-child(2) span {
     color: #FFFFFF; }
-  .foot .foot-lis:nth-child(3) i {
+  .fenlei .foot-shucheng .foot-lis:nth-child(3) i {
     background: url("../img/icon3.png");
     background-position: -0.5rem 0;
     background-size: cover; }
 
-.wangluo h1 {
+.fenlei .fenlei1 {
+  margin-bottom: 1rem; }
+
+.fenlei .wangluo h1 {
   position: relative;
   width: 100%;
   height: 0.6rem;
@@ -230,7 +241,7 @@ img {
   color: #FFFFFF;
   line-height: 0.6rem;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); }
-  .wangluo h1 span {
+  .fenlei .wangluo h1 span {
     display: inline-block;
     width: 0.38rem;
     height: 0.28rem;
@@ -242,32 +253,32 @@ img {
     bottom: 0;
     margin: auto; }
 
-.wangluo .girl {
+.fenlei .wangluo .girl {
   margin-bottom: 0.47rem; }
-  .wangluo .girl h2 {
+  .fenlei .wangluo .girl h2 {
     height: 0.65rem;
     line-height: 0.65rem;
     font-size: 0.28rem;
     color: #29a6dc;
     padding-left: 0.4rem;
     margin-top: 0.1rem; }
-  .wangluo .girl .fenge {
+  .fenlei .wangluo .girl .fenge {
     width: 6.1rem;
     margin: 0 auto;
     border: 1px dotted #dddddd; }
-  .wangluo .girl ul {
+  .fenlei .wangluo .girl ul {
     height: 2px;
     box-shadow: 0 0.6rem 0.6rem rgba(128, 127, 127, 0.07);
     overflow: hidden;
     height: 1.28rem;
     padding: 0 0.33rem; }
-    .wangluo .girl ul li {
+    .fenlei .wangluo .girl ul li {
       width: 2.03rem;
       height: 0.88rem;
       float: left;
       margin: 0 0.125rem;
       margin-top: 0.4rem; }
-      .wangluo .girl ul li a {
+      .fenlei .wangluo .girl ul li a {
         display: block;
         width: 100%;
         height: 100%;
@@ -275,9 +286,9 @@ img {
         text-align: center;
         font-size: 0.32rem;
         color: #FFFFFF; }
-    .wangluo .girl ul li:nth-of-type(2n+1) {
+    .fenlei .wangluo .girl ul li:nth-of-type(2n+1) {
       background: url("../img/bg4.png");
       background-size: cover; }
-    .wangluo .girl ul li:nth-of-type(2n) {
+    .fenlei .wangluo .girl ul li:nth-of-type(2n) {
       background: url("../img/bg-4.png");
       background-size: cover; }

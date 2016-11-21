@@ -58,17 +58,21 @@ img {
     bottom: 0;
     margin: auto;
     right: 0.25rem; }
-    .top .circle1 .search {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      width: 0.25rem;
-      height: 0.22rem;
-      background: #fff url("../img/search.png") no-repeat;
-      background-size: cover; }
+    .top .circle1 a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .top .circle1 a .search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 0.25rem;
+        height: 0.22rem;
+        background: #fff url("../img/search.png") no-repeat;
+        background-size: cover; }
   .top .top-content {
     position: absolute;
     top: 0;
@@ -118,6 +122,9 @@ img {
             text-align: center;
             text-transform: uppercase;
             bottom: 0; }
+      .top .top-content .top-lis .thirdcir {
+        background: url("../img/bg2.png");
+        background-size: cover; }
     .top .top-content .top-xian1 {
       height: 0.57rem;
       width: 1px;
@@ -187,18 +194,22 @@ img {
     height: 100%;
     border-right: 1px solid #717171;
     float: left; }
-    .foot .foot-lis i {
+    .foot .foot-lis a {
       display: block;
-      width: 0.45rem;
-      height: 0.45rem;
-      margin: 0 auto;
-      margin-top: 0.1rem; }
-    .foot .foot-lis span {
-      display: block;
-      font-size: 0.24rem;
-      color: #646567;
-      margin: 0 auto;
-      text-align: center; }
+      width: 100%;
+      height: 100%; }
+      .foot .foot-lis a i {
+        display: block;
+        width: 0.45rem;
+        height: 0.45rem;
+        margin: 0 auto;
+        margin-top: 0.1rem; }
+      .foot .foot-lis a span {
+        display: block;
+        font-size: 0.24rem;
+        color: #646567;
+        margin: 0 auto;
+        text-align: center; }
   .foot .foot-lis:nth-child(3) {
     border: none; }
   .foot .foot-lis:nth-child(1) i {
@@ -215,6 +226,9 @@ img {
     background: url("../img/icon3.png");
     background-position: -0.5rem 0;
     background-size: cover; }
+
+.fenlei1 {
+  margin-bottom: 1rem; }
 
 .wangluo h1 {
   position: relative;
