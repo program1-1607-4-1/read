@@ -1,8 +1,18 @@
-app.config([
-	"$routeProvider",
-	function($routeProvider){
-		// 模板
-		$routeProvider.when("/",{
-			templeteUrl:"pages/enter/login/login.html"
-		})
-	}])
+app.config(["$routeProvider",function($routeProvider){
+    $routeProvider.when("/shuye1",{
+        templateUrl:"pages/book-page/shuye1/shuye.html",
+        controller:"shuye1Ctrl"
+    }).when('/shuye3',{
+        templateUrl:"pages/book-page/shuye3/shuye.html",
+        controller:"shuye3Ctrl"
+    }).when('/shuye6',{
+        templateUrl:"pages/book-page/shuye6/shuye.html",
+        controller:"shuye6Ctrl"
+    }).when('/shuye4',{
+        templateUrl:"pages/book-page/shuye4/shuye.html",
+        controller:"shuye4Ctrl"
+    }).when('/shuye5',{
+        templateUrl:"pages/book-page/shuye5/shuye.html",
+        controller:"shuye5Ctrl"
+    })
+}])
