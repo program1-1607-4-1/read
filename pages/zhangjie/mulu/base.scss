@@ -1,0 +1,76 @@
+$d_list:320px,360px,375px,412px,414px;
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+$d-size:750px;
+@each $i in $d_list{
+    @media screen and (min-width:#{$i}){
+        html{
+            font-size: 100px * $i/$d-size;
+            
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+//  position: relative;
+    box-sizing: border-box;
+    font-family: "苹方";
+}
+img{
+    border: none;
+}
+a{
+    text-decoration:none;
+}
+/*上下居中:@include tb*/
+@mixin tb{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*左右居中: @include lr*/
+@mixin lr{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*居中:@include center*/
+@mixin center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*圆:@include yuan*/
+@mixin yuan($w){
+    width: $w;
+    height: $w;
+    border-radius: 50%;   
+}
+/*宽高:@include wh($w,$h)*/
+@mixin wh($w,$h){
+    width: $w;
+    height: $h;
+}
+$img-url:"../img/";
+/*调试所用边框：@include border*/
+@mixin border{
+    border: 1px solid #000;
+}
+/*图片居中：@include img-center*/
+@mixin img-center{
+    max-width: 100%;
+    max-height: 100%;
+    @include center;  
+}

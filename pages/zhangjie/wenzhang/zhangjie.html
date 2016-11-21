@@ -1,0 +1,253 @@
+<!--<!doctype html>
+<html lang="en" ng-app='zhangjie'>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width">
+		<title>Document</title>
+		<link rel="stylesheet" href="zhangjie.css" />
+		<script src='https://cdn.bootcss.com/angular.js/1.5.8/angular.js'></script>
+		<script src='https://cdn.bootcss.com/angular.js/1.5.8/angular-route.js'></script>
+		<script src='zhangjie.js'></script>
+		<script src='../../../jquery.js'></script>
+	</head>
+
+	<body ng-controller='zhangjieCtrl'>-->
+		<div class='zhangjie-box' dian-ji>
+			<div class='zhengwen3'>
+				<div class='fix'>
+					<div class="header">
+						<div class="return">
+							<a href="">
+								<img src="img/zhangjie/fanhui.png" alt="" />
+							</a>
+						</div>
+						<div class="shuqian">
+							<img src="img/zhangjie/shuqian.png" alt="" />
+						</div>
+						<div class="dow">
+							<img src="img/zhangjie/xiazai.png" alt="" />
+						</div>
+					</div>
+					<!--固定-->
+					<div class='gudi'>
+						<div class="banyuan">
+							<img src="img/zhangjie/banyuan.png" alt="" />
+						</div>
+						<div class='shu'>
+							<img src="img/zhangjie/shu.png" alt="" />
+						</div>
+					</div>
+					<div class='yueliang'>
+						<img src="img/zhangjie/yue.png" alt="" />
+					</div>
+					<!--底部-->
+					<div class="foot">
+						<div class='zhangjie'>
+							<div class='shang'>上一章</div>
+							<div class='jindu'>
+								<div class='zong'>
+									<img src="" alt="" />
+								</div>
+								<div class='yuan'>
+									<img src="img/zhangjie/yuan.png" alt="" />
+								</div>
+							</div>
+							<div class='xia'>下一章</div>
+						</div>
+						<ul class="list">
+							<li class='mulu'>
+								<img src="img/zhangjie/mulu.png" alt="" />
+								<h1>目录</h1>
+								<a href="#/mulu"></a>
+							</li>
+							<li class='shezhi' she-zhi>
+								<img src="img/zhangjie/shezhi.png" alt="" />
+								<h1>设置</h1>
+							</li>
+							<li class='liangdu' liang-du>
+								<img src="img/zhangjie/liangdu.png" alt="" />
+								<h1>亮度</h1>
+							</li>
+						</ul>
+					</div>
+
+					<!--亮度-->
+					<div class='liangdu-list'>
+						<div class='zhangjie'>
+							<div class='shang an'>暗</div>
+							<div class='jindu liangdu-jindu'>
+								<div class='zong'>
+									<img src="" alt="" />
+								</div>
+								<div class='yuan'>
+									<img src="img/zhangjie/yuan.png" alt="" />
+								</div>
+							</div>
+							<div class='xia liang'>亮</div>
+							<div class='style'>系统</div>
+						</div>
+						<div class='moshi'>
+							<div class='huyan'>
+								<img src="img/zhangjie/baiyuan.png" alt="" />
+								<span>护眼模式</span>
+							</div>
+							<div class='pingmu'>
+								<img src="img/zhangjie/huangyuan.png" alt="" />
+								<span>屏幕亮度</span>
+							</div>
+						</div>
+					</div>
+					<!--设置-->
+					<div class='shezhi-list'>
+						<!--字号-->
+						<div class='zhangjie zihao'>
+							<div class='shang'>字号</div>
+							<div class='zihao-one'>
+								<img src="img/zhangjie/ziti.png" alt="" />
+							</div>
+							<div class='jindu shezhi-jindu'>
+								<div class='zong'>
+									<img src="" alt="" />
+								</div>
+								<div class='yuan'>
+									<img src="img/zhangjie/yuan.png" alt="" />
+								</div>
+							</div>
+							<div class='xia shuzi'>20</div>
+						</div>
+						<!--行距-->
+						<div class='zhangjie zihao'>
+							<div class='shang'>行距</div>
+							<div class='zihao-one'>
+								<img src="img/zhangjie/hangju.png" alt="" />
+							</div>
+							<div class='jindu shezhi-jindu'>
+								<div class='zong'>
+									<img src="" alt="" />
+								</div>
+								<div class='yuan'>
+									<img src="img/zhangjie/yuan.png" alt="" />
+								</div>
+							</div>
+							<div class='xia shuzi'>06</div>
+						</div>
+						<!--背景-->
+						<div class='bg'>
+							<div class='shang'>背景</div>
+							<ul class='bg-tu'>
+								<li>
+									<div class='bg-color bg-one'></div>
+									<div class='bg-wenzi'>纯色羊皮</div>
+								</li>
+								<li>
+									<div class='bg-color bg-two'></div>
+									<div class='bg-wenzi'>经典一</div>
+								</li>
+								<li>
+									<div class='bg-color bg-three'></div>
+									<div class='bg-wenzi'>经典二</div>
+								</li>
+								<li>
+									<div class='bg-color bg-four'></div>
+									<div class='bg-wenzi'>蓝色图腾</div>
+								</li>
+								<li>
+									<div class='bg-color bg-five'></div>
+									<div class='bg-wenzi'>美丽星空</div>
+								</li>
+								<li>
+									<div class='bg-color bg-six'></div>
+									<div class='bg-wenzi'>少女情怀</div>
+								</li>
+								<li>
+									<div class='bg-color bg-seven'></div>
+									<div class='bg-wenzi'>养眼绿色</div>
+								</li>
+								<li>
+									<div class='bg-color bg-eight'>+</div>
+									<div class='bg-wenzi'>自定义</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">
+					<div class="pre-xian"></div>
+					<div class='title-wz'>最强小农民</div>
+					<div class="last-xian"></div>
+				</div>
+				<div class="zhengwen">
+					<div class='zhengwen1'>
+						<h1>
+			            		<span>第一卷</span>
+			            		<span>第一章</span>
+			            		<span>见鬼了！</span>
+		            		</h1>
+
+						<div class='neirong'>
+
+							<p> 岭西县第一人民医院。</p>
+
+							<p>一名少年迈出了大门。</p>
+
+							<p>他十七八岁，身形高瘦，相貌有些清秀，但头发乱糟糟的，穿着一件皱巴巴的白衬衫，一条洗得发白的牛仔裤，看起来很土，很寒酸。</p>
+
+							<p>一双鞋子也有些破，脚后跟开了个裂口。</p>
+
+							<p>站在大门口，他深吸了口气，神情有些恍惚。抬起头，面对刺眼的阳光，他不由眯了眯眼。</p>
+
+							<p>半个月了，他在医院中，足足住了半个月。</p>
+
+							<p>这半个月，恍如隔世。</p>
+
+							<p>他叫唐昊，岭西县唐家村人，半个月前，路上见义勇为，不料却被歹人打成重伤，还被捅了一刀，被送进了医院。</p>
+
+							<p>而更令他郁闷的是，那被他救了的人，早就消失得无影无踪，而那几个混混也没抓到，无法证实是见义勇为，最后，事情就不了了之。</p>
+
+							<p>沉重的医药费，也落到了他自个头上。</p>
+
+							<p>唐昊并不富裕，打小没了母亲，七年前，父亲也得病去世，没留下多少钱，去年缀学后，四处打工，也只攒了万把块钱，全赔在医药费上了。</p>
+
+							<p>这令唐昊很郁闷，不过，幸运的是，在他受重伤后，胸前戴着的玉佩突然发热，有无数信息涌入他脑海中。 </p>
+
+							<p>在他醒来后，仔细读了一遍，才发现是一种古老的修行之法，还有很多古老的知识。</p>
+							<p>在此之前，他如世间大多数人一样，是坚定的唯物主义者，不相信什么神神鬼鬼的超自然事件，直到这时，才不得不相信。</p>
+							<p>这些知识，为他打开了另一扇大门，也令他的心境发生了极大的变化。</p>
+							<p>他坚信，凭借这一门修行功法，还有这些知识，定能令他的人生发生改变。</p>
+
+						</div>
+					</div>
+					<div class='yejiao'>
+						<sapn class='yejiao-left'>本章进度0%</sapn>
+						<span class='yejiao-right'>1/468</span>
+					</div>
+					
+				</div>
+			</div>
+			<!--复制--> 
+			<div class='fuzi1'>
+	            <ul class='fuzi'>
+	            	<li>
+	            		<a href="#">标注</a>
+	            	</li>
+	            	<li>
+	            		<a href="#/biji">笔记</a>
+	            	</li>
+	            	<li>
+	            		<a href="#">拷贝</a>
+	            	</li>
+	            	<li>
+	            		<a href="#">搜索</a>
+	            	</li>
+	            	<li class='ci'>
+	            		<a href="#">词典</a>
+	            	</li>
+	            </ul>
+            </div>
+		</div>
+	<!--</body>
+
+</html>-->

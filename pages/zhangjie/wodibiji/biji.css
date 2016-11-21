@@ -1,0 +1,199 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "苹方"; }
+
+img {
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+.biji-box {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.wodebj {
+  height: 1rem;
+  width: 100%;
+  background: #29a6dc; }
+  .wodebj .return1 {
+    position: absolute;
+    left: 0.22rem;
+    bottom: 0.22rem;
+    z-index: 5; }
+    .wodebj .return1 img {
+      width: 0.45rem; }
+    .wodebj .return1 a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%; }
+
+.wode-biaoti {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .wode-biaoti h1 {
+    color: #fff;
+    font-size: 0.34rem; }
+  .wode-biaoti .wd-tu {
+    width: 0.35rem;
+    height: 00.04rem;
+    background: url("../../../img/zhangjie/wd.png");
+    background-size: cover;
+    margin: 0 auto; }
+  .wode-biaoti h2 {
+    color: #8BD9FD;
+    font-size: 0.15rem; }
+
+.wd-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
+  .wd-content .wd-riqi {
+    width: 100%;
+    height: 0.53rem;
+    padding-top: 0.1rem; }
+    .wd-content .wd-riqi .wd-riqi1 {
+      width: 0.3rem;
+      height: 0.29rem;
+      background: url("../../../img/zhangjie/wd-rq.png");
+      background-size: cover;
+      margin-left: 0.1rem;
+      float: left;
+      margin-top: 0.08rem; }
+    .wd-content .wd-riqi p {
+      float: left;
+      margin-left: 0.1rem; }
+      .wd-content .wd-riqi p span {
+        font-size: 0.18rem;
+        color: #9B9B9B;
+        margin-right: 0.1rem; }
+
+.shuru {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.1rem;
+  position: relative; }
+  .shuru .wd-xian {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.1rem;
+    width: 100%;
+    z-index: 3;
+    background: url("../../../img/zhangjie/wd-xian.png");
+    background-size: cover; }
+
+.sr-cont1 {
+  width: 7rem;
+  height: 3.26rem;
+  position: relative; }
+  .sr-cont1 .sr-cont {
+    padding-left: 0.1rem;
+    width: 7rem;
+    height: 3.26rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.1rem;
+    border: 0.01rem solid #E8E8E8;
+    box-shadow: 0 0 0.1rem #EBEBEB; }
+  .sr-cont1 .sr-wenzi {
+    position: absolute;
+    top: 0;
+    left: 0.1rem;
+    font-size: 0.23rem;
+    color: #333333; }
+
+.sr-cont2 {
+  width: 7rem;
+  height: 1.01rem;
+  margin-top: 0.25rem;
+  position: relative; }
+  .sr-cont2 .sr-bianji {
+    padding-left: 0.1rem;
+    width: 7rem;
+    height: 1.01rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.1rem;
+    border: 0.01rem solid #E8E8E8;
+    box-shadow: 0 0 0.1rem #EBEBEB; }
+  .sr-cont2 .bj-wz {
+    position: absolute;
+    top: 0;
+    left: 0.1rem;
+    font-size: 0.23rem;
+    color: #999999; }
+
+.sr-anniu {
+  width: 100%;
+  height: 0.67rem;
+  position: relative;
+  margin-top: 0.5rem; }
+  .sr-anniu .bianji3 {
+    width: 1.72rem;
+    height: 0.63rem;
+    position: absolute;
+    top: 0;
+    left: 1.21rem;
+    text-align: center;
+    line-height: 0.63rem;
+    font-size: 0.23rem;
+    color: #fff;
+    background: url("../../../img/zhangjie/wd-bj.png");
+    background-size: cover; }
+  .sr-anniu .queding {
+    width: 1.72rem;
+    height: 0.63rem;
+    position: absolute;
+    top: 0;
+    right: 1.21rem;
+    text-align: center;
+    line-height: 0.63rem;
+    font-size: 0.23rem;
+    color: #fff;
+    background: url("../../../img/zhangjie/wd-qd.png");
+    background-size: cover; }

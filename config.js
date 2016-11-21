@@ -1,5 +1,26 @@
 app.config(["$routeProvider",function($routeProvider){
-    $routeProvider.when("/wenzhang",{
+    $routeProvider.when("/tuijian",{
+        templateUrl:"pages/My/tuijian/tuijian.html",
+        controller:"tuijianCtrl"
+    }).when("/gerenxinxi",{
+        templateUrl:"pages/My/gerenxinxi/gerenxinxi.html",
+        controller:"gerenxinxiCtrl"
+    }).when("/banben",{
+        templateUrl:"pages/My/banben/banben.html",
+        controller:"banbenCtrl"
+    }).when("/yijian",{
+        templateUrl:"pages/My/yijian/yijian.html",
+        controller:"yijianCtrl"
+    }).when("/shezhi",{
+        templateUrl:"pages/My/shezhi/shezhi.html",
+        controller:"shezhiCtrl"
+    }).when("/wodexiaoxi",{
+        templateUrl:"pages/wode/wodexiaoxi/wodexiaoxi.html",
+        controller:"wodexiaoxiCtrl"
+    }).when("/wodeziliao",{
+        templateUrl:"pages/wode/wodeziliao/wodeziliao.html",
+        controller:"wodeziliaoCtrl"
+    }).when("/wenzhang",{
         templateUrl:"pages/zhangjie/wenzhang/zhangjie.html",
         controller:"wenzhangCtrl"
     }).when("/wodibiji",{
