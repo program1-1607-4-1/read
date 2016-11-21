@@ -1,0 +1,308 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: '苹方'; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+.information {
+  width: 100%;
+  height: 1.1rem;
+  margin: auto;
+  background: #29A6DC; }
+  .information .newback {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.2rem;
+    border-radius: 50%; }
+  .information .myinformation {
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 50%;
+    margin-left: -0.9rem; }
+    .information .myinformation p:nth-child(1) {
+      color: white;
+      font-size: 0.4rem; }
+    .information .myinformation p:nth-child(2) {
+      color: #76CCF4;
+      font-size: 0.23rem; }
+
+.zcontent {
+  width: 100%;
+  height: 12.23rem;
+  background: #FAFAFA; }
+  .zcontent .Zcontent1 {
+    width: 7.1rem;
+    height: 3.8rem;
+    background: #fff;
+    position: absolute;
+    top: 0.3rem;
+    left: 50%;
+    margin-left: -3.55rem; }
+    .zcontent .Zcontent1 .newbook {
+      width: 100%;
+      height: 0.8rem;
+      border-bottom: 2px dashed #BEBEBE; }
+      .zcontent .Zcontent1 .newbook img {
+        display: block;
+        float: left;
+        margin-left: 0.1rem;
+        margin-top: 0.09rem; }
+      .zcontent .Zcontent1 .newbook p {
+        font-size: 0.35rem;
+        display: block;
+        width: 100%;
+        height: 0.4rem;
+        margin-top: 0.15rem; }
+      .zcontent .Zcontent1 .newbook span {
+        color: #C5C5C5; }
+      .zcontent .Zcontent1 .newbook .you {
+        float: right;
+        margin-right: 0.3rem;
+        margin-top: -0.3rem;
+        color: #4E4E4E;
+        font-weight: bold; }
+    .zcontent .Zcontent1 .bo1 {
+      border: 0; }
+  .zcontent .Zcontent2 {
+    width: 7.1rem;
+    height: 2rem;
+    background: #fff;
+    position: absolute;
+    top: 4.3rem;
+    left: 50%;
+    margin-left: -3.55rem; }
+    .zcontent .Zcontent2 .newbook {
+      width: 100%;
+      height: 0.8rem;
+      border-bottom: 2px dashed #BEBEBE; }
+      .zcontent .Zcontent2 .newbook img {
+        display: block;
+        float: left;
+        margin-left: 0.1rem;
+        margin-top: 0.09rem; }
+      .zcontent .Zcontent2 .newbook p {
+        font-size: 0.35rem;
+        display: block;
+        width: 100%;
+        height: 0.4rem;
+        margin-top: 0.15rem; }
+      .zcontent .Zcontent2 .newbook span {
+        color: #C5C5C5; }
+      .zcontent .Zcontent2 .newbook .you {
+        float: right;
+        margin-right: 0.3rem;
+        margin-top: -0.3rem;
+        color: #4E4E4E;
+        font-weight: bold; }
+    .zcontent .Zcontent2 .bo2 {
+      border: 0; }
+
+.tan {
+  width: 100%;
+  height: 13.33rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(3, 3, 3, 0.8);
+  display: none; }
+  .tan .touxiang {
+    width: 5rem;
+    height: 3rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 50%;
+    margin-left: -2.5rem;
+    top: 50%;
+    margin-top: -1.5rem;
+    border-radius: 0.2rem; }
+    .tan .touxiang .touxiang1 {
+      width: 100%;
+      height: 0.8rem;
+      background: #29DCBC;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem; }
+      .tan .touxiang .touxiang1 img {
+        display: block;
+        float: left;
+        margin-left: 0.3rem;
+        margin-top: 0.2rem;
+        margin-right: 0.2rem; }
+      .tan .touxiang .touxiang1 p {
+        font-size: 0.2rem;
+        padding-top: 0.15rem;
+        color: white; }
+      .tan .touxiang .touxiang1 span {
+        color: white; }
+    .tan .touxiang .Zcontent3 {
+      width: 100%;
+      height: 2.2rem;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      margin-left: -50%;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+      .tan .touxiang .Zcontent3 .newbook {
+        width: 100%;
+        height: 0.8rem;
+        border-bottom: 2px dashed #BEBEBE; }
+        .tan .touxiang .Zcontent3 .newbook img {
+          display: block;
+          float: left;
+          margin-left: 0.3rem;
+          margin-top: 0.2rem;
+          margin-right: 0.2rem; }
+        .tan .touxiang .Zcontent3 .newbook p {
+          font-size: 0.2rem;
+          padding-top: 0.15rem;
+          color: #000; }
+        .tan .touxiang .Zcontent3 .newbook span {
+          color: #C5C5C5; }
+        .tan .touxiang .Zcontent3 .newbook .you {
+          float: right;
+          margin-right: 0.3rem;
+          margin-top: -0.3rem;
+          color: #4E4E4E;
+          font-weight: bold; }
+      .tan .touxiang .Zcontent3 .bo2 {
+        border: 0; }
+    .tan .touxiang .quxiao {
+      width: 2.5rem;
+      height: 0.8rem;
+      background: #29DCBC;
+      border-radius: 1rem;
+      position: absolute;
+      left: 50%;
+      margin-left: -1.25rem;
+      bottom: -0.4rem;
+      text-align: center;
+      line-height: 0.8rem; }
+      .tan .touxiang .quxiao p {
+        color: #fff; }
+
+.tan2 {
+  width: 100%;
+  height: 13.33rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(3, 3, 3, 0.8);
+  display: none; }
+  .tan2 .touxiang {
+    width: 5rem;
+    height: 3rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 50%;
+    margin-left: -2.5rem;
+    top: 50%;
+    margin-top: -1.5rem;
+    border-radius: 0.2rem; }
+    .tan2 .touxiang .touxiang1 {
+      width: 100%;
+      height: 0.8rem;
+      background: #29DCBC;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem; }
+      .tan2 .touxiang .touxiang1 img {
+        display: block;
+        float: left;
+        margin-left: 0.3rem;
+        margin-top: 0.2rem;
+        margin-right: 0.2rem; }
+      .tan2 .touxiang .touxiang1 p {
+        font-size: 0.2rem;
+        padding-top: 0.15rem;
+        color: white; }
+      .tan2 .touxiang .touxiang1 span {
+        color: white; }
+    .tan2 .touxiang .Zcontent3 {
+      width: 100%;
+      height: 2.2rem;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      margin-left: -50%;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+      .tan2 .touxiang .Zcontent3 .newbook {
+        width: 30%;
+        height: 0.8rem;
+        float: left;
+        margin-top: 0.5rem;
+        margin-left: 1rem; }
+        .tan2 .touxiang .Zcontent3 .newbook img {
+          display: block;
+          float: left;
+          margin-left: 0.3rem;
+          margin-right: 0.2rem; }
+      .tan2 .touxiang .Zcontent3 .newbook2 {
+        width: 50%;
+        height: 0.8rem;
+        float: left;
+        margin-top: 0.5rem; }
+        .tan2 .touxiang .Zcontent3 .newbook2 img {
+          display: block;
+          float: left;
+          margin-left: 0.3rem;
+          margin-right: 0.2rem; }
+    .tan2 .touxiang .quxiao1 {
+      width: 2.5rem;
+      height: 0.8rem;
+      background: #29DCBC;
+      border-radius: 1rem;
+      position: absolute;
+      left: 50%;
+      margin-left: -1.25rem;
+      bottom: -0.4rem;
+      text-align: center;
+      line-height: 0.8rem; }
+      .tan2 .touxiang .quxiao1 p {
+        color: #fff; }
