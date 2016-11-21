@@ -1,0 +1,383 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+  font-family: '苹方';
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+img {
+  border: none;
+}
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+.top {
+  height: 1rem;
+  width: 100%;
+  background: #29a6dc;
+}
+
+.top .circle1 {
+  width: 0.44rem;
+  height: 0.44rem;
+  border: 0.02rem solid #076CBE;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.25rem;
+}
+
+.top .circle1 .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0.25rem;
+  height: 0.22rem;
+  background: #fff url("../img/search.png") no-repeat;
+  background-size: cover;
+}
+
+.top .top-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5.75rem;
+  height: 0.84rem;
+  border-radius: 0.42rem;
+  background: #293340;
+  padding-left: 1px;
+}
+
+.top .top-content .top-lis {
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+}
+
+.top .top-content .top-lis .cir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1.65rem;
+  height: 0.7rem;
+}
+
+.top .top-content .top-lis .cir a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.top .top-content .top-lis .cir a h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #FFFFFF;
+  margin-top: 0.13rem;
+}
+
+.top .top-content .top-lis .cir a span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 0.14rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+}
+
+.top .top-content li:nth-child(3) .cir {
+  background: url("../img/bg2.png");
+  background-size: cover;
+}
+
+.top .top-content .top-xian1 {
+  height: 0.57rem;
+  width: 1px;
+  position: relative;
+  float: left;
+  background: #C4C4C4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 33%;
+}
+
+.top .top-content .top-xian1 .cir1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian1 .cir2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian2 {
+  height: 0.57rem;
+  width: 1px;
+  position: relative;
+  float: left;
+  background: #C4C4C4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 33%;
+}
+
+.top .top-content .top-xian2 .cir1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian2 .cir2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.foot {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background: url("../img/bg5.png");
+  background-size: cover;
+}
+
+.foot .foot-lis {
+  width: 33.33333%;
+  height: 100%;
+  border-right: 1px solid #717171;
+  float: left;
+}
+
+.foot .foot-lis i {
+  display: block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+}
+
+.foot .foot-lis span {
+  display: block;
+  font-size: 0.24rem;
+  color: #646567;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.foot .foot-lis:nth-child(3) {
+  border: none;
+}
+
+.foot .foot-lis:nth-child(1) i {
+  background: url("../img/icon3.png");
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.foot .foot-lis:nth-child(2) i {
+  background: url("../img/icon3.png");
+  background-position: -1.05rem 0;
+  background-size: cover;
+}
+
+.foot .foot-lis:nth-child(2) span {
+  color: #FFFFFF;
+}
+
+.foot .foot-lis:nth-child(3) i {
+  background: url("../img/icon3.png");
+  background-position: -0.5rem 0;
+  background-size: cover;
+}
+
+.bang-lis {
+  width: 100%;
+  height: 2.7rem;
+  background: url("../img//bg1.png");
+  margin-bottom: 0.16rem;
+  overflow: hidden;
+}
+
+.bang-lis .bang-con {
+  width: 7rem;
+  margin: 0 auto;
+}
+
+.bang-lis .bang-con .bang-left {
+  width: 50%;
+  text-align: center;
+  float: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bang-lis .bang-con .bang-left h1 {
+  font-size: 0.28rem;
+  color: #FFFFFF;
+  height: 0.28rem;
+  line-height: 0.28rem;
+}
+
+.bang-lis .bang-con .bang-left span {
+  display: inline-block;
+  height: 0.12rem;
+  line-height: 0.12rem;
+  font-size: 0.12rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.bang-lis .bang-con .bang-left em {
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: url("../img/icon.png");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.bang-lis .bang-con .bang-left p {
+  font-size: 0.18rem;
+  color: #FFFFFF;
+  font-weight: 200;
+}
+
+.bang-lis .bang-con .bang-right {
+  width: 50%;
+  float: left;
+  padding: 0.5rem 0;
+}
+
+.bang-lis .bang-con .bang-right div {
+  margin: 0.2rem 0;
+  width: 100%;
+  position: relative;
+  font-size: 0.22rem;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  font-weight: 200;
+}
+
+.bang-lis .bang-con .bang-right div span {
+  position: absolute;
+  left: 0.2rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.2rem;
+  background: url("../img/top2.png");
+  background-size: cover;
+}
+
+.bang-lis .bang-con .bang-right div:nth-child(2) span {
+  position: absolute;
+  left: 0rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.35rem;
+  background: url("../img/top1.png");
+  background-size: cover;
+}
+
+.bang-lis .bang-con .bang-right div:nth-child(3) span {
+  background: url("../img/top3.png");
+  background-size: cover;
+}

@@ -1,0 +1,289 @@
+@import "../../../../../base";
+.top{
+    height: 1rem;
+    width: 100%;
+    background: #29a6dc;
+    .circle1{
+        width: 0.44rem;
+        height: 0.44rem;
+        border:0.02rem solid #076CBE;
+        border-radius:50%;
+        background:#fff;
+        @include tb;
+        right:0.25rem;  
+        .search{
+            @include center;
+            width: 0.25rem;
+            height: 0.22rem;
+            background:#fff url($img-url+'search.png') no-repeat;
+            background-size:cover;
+        }
+    }
+    .top-content{
+        @include center;
+        width: 5.75rem;
+        height: 0.84rem;
+        border-radius: 0.42rem;
+        background: #293340;
+        padding-left: 1px;
+        .top-lis{
+            width: 33.33333%;
+            float: left;
+            height: 100%;
+            .cir{
+                @include center;
+                width:1.65rem;
+                height: 0.7rem;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    h1{
+                        @include lr;
+                        text-align: center;
+                        font-size: 0.24rem;
+                        color: #FFFFFF;
+                        margin-top:0.13rem;
+                    }
+                    span{
+                        @include lr;
+                        color: #FFFFFF;
+                        font-size: 0.14rem;
+                        font-weight: 200;
+                        text-align: center;
+                        text-transform: uppercase;
+                        bottom: 0;
+                    }
+                }
+                
+            } 
+        }
+         li:nth-child(1) .cir{
+                    background: url($img-url+"bg2.png");
+                    background-size: cover; 
+                }
+        .top-xian1{
+            height:0.57rem;
+            width: 1px;
+            position: relative;
+            float: left;
+            background: #C4C4C4;
+            @include tb;
+            left:33%;
+            .cir1{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                position: absolute;
+                top:-2px;
+                left:-1px;
+                background: #EFEFEF;
+            }
+            .cir2{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                position: absolute;
+                bottom:-2px;
+                left:-1px;
+                background: #EFEFEF;
+            }
+        }
+        .top-xian2{
+            height:0.57rem;
+            width: 1px;
+            position: relative;
+            float: left;
+            background: #C4C4C4;
+            @include tb;
+            right:33%;
+            .cir1{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                position: absolute;
+                top:-2px;
+                left:-1px;
+                background: #EFEFEF;
+            }
+            .cir2{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                position: absolute;
+                bottom:-2px;
+                left:-1px;
+                background: #EFEFEF;
+            }
+        }
+    }
+}
+.foot{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: 20;
+    background:url($img-url+"bg5.png");
+    background-size: cover;
+    .foot-lis{
+        width: 33.33333%;
+        height: 100%;
+        border-right: 1px solid #717171;
+        float: left;
+        i{
+            display: block;
+            width: 0.45rem;
+            height: 0.45rem;
+            margin: 0 auto;
+            margin-top: 0.1rem;
+        }
+        span{
+            display: block;
+            font-size: 0.24rem;
+            color: #646567;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .foot-lis:nth-child(3){
+        border: none;
+    }
+    .foot-lis:nth-child(1) i{
+        background:url($img-url+"icon3.png");
+        background-position:0 0;
+        background-size: cover;
+    }
+    .foot-lis:nth-child(2) i{
+       background:url($img-url+"icon3.png");
+        background-position:- 1.05rem 0;
+       background-size: cover;
+    }
+    .foot-lis:nth-child(2) span{
+       color: #FFFFFF;
+    }
+    .foot-lis:nth-child(3) i{
+        background:url($img-url+"icon3.png");
+         background-position:- 0.5rem 0;
+        background-size: cover;
+    }
+}
+.banner{
+    width: 100%;
+    height: 4.83rem;
+    position: relative;
+    .banner-pic{
+        width: 100%;
+        height:100%;
+        position: absolute;
+        background: url(../img/shucheng/banner.jpg);
+        background-size: cover;
+        h1{
+            height: 0.4rem;
+            margin-top:1rem;
+            margin-left: 0.9rem;
+            font-size:0.36rem;
+            color: #1b1c1e;
+        }
+        div{
+            width: 1.8rem;
+            height:1px;
+            margin-left: 0.9rem;
+            background: #a1a6bb;
+            margin-top:0.3rem ;
+        }
+        p{
+            height: 0.3rem;
+            margin-left:0.9rem;
+            color: #585b62;
+            font-size: 0.24px;
+            margin-top:0.2rem;
+            font-weight: 500;
+            span{
+                font-weight: 600;
+                color: #818593;
+            }
+        }
+    }
+    .dian{
+        position: absolute;
+        @include lr;
+        bottom: - 0.15rem;
+        width:0.45rem ;
+        height: 0.08rem;
+        .dian-lis{
+            width: 0.08rem;
+            height: 0.08rem;
+            border-radius: 50%;
+            border:1px solid #0090FF;
+            float: left;
+            margin-right: 0.06rem;
+        }
+        .dian-lis:nth-child(1){
+            background:#0090FF;
+        }
+    }
+}
+.newjia{
+    width: 7rem;
+    margin: 0 auto;
+    margin-top:0.2rem;
+    .xin{
+        position: relative;
+        h1{
+            font-size: 0.3rem;
+            color: #333333;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            margin-left:0.6rem;
+        }
+        h2{
+            font-size: 0.25rem;
+            color: #666666;
+            height: 0.25rem;
+            line-height: 0.25rem;
+            margin-left:0.6rem;
+        }
+        .tubiao{
+            position: absolute;
+            top:0.05rem;
+            left:0.15rem;
+            width: 0.31rem;
+            height: 0.31rem;
+            background: url(../img/shucheng/biao.png);
+            background-size: cover;
+        }
+    }
+    .book-1{
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .book-lis{
+            margin-top:0.3rem;
+            width:33.33333%;
+            float: left;
+            a{
+                margin: 0 auto;
+                display: block;
+                width: 1.8rem;
+                img{
+                width: 100%;
+                height: 2.55rem;
+                }
+                span{
+                    font-size: 0.2rem;
+                    color: #333333;
+                    line-height: 0.3rem;
+                    display: inline-block;
+                }
+                p{
+                    text-align: left;
+                    font-size: 0.18rem;
+                    color: #999999;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

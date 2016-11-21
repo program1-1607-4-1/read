@@ -1,0 +1,395 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "苹方";
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+.header {
+  width: 100%;
+  height: 1rem;
+  background: #2BA6DC;
+}
+
+.header .circle {
+  width: 0.44rem;
+  height: 0.44rem;
+  border: 0.02rem solid #076CBE;
+  border-radius: 50%;
+  background: #fff url("../img/left.jpg") no-repeat;
+  background-size: auto 0.17rem;
+  background-position: 0.15rem 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.25rem;
+}
+
+.header .circle1 {
+  width: 0.44rem;
+  height: 0.44rem;
+  border: 0.02rem solid #076CBE;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.25rem;
+}
+
+.header .circle1 .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0.25rem;
+  height: 0.22rem;
+  background: #fff url("../img/search.png") no-repeat;
+  background-size: cover;
+}
+
+.header .title {
+  text-align: center;
+}
+
+.header .title h1 {
+  font-size: 0.33rem;
+  color: #fff;
+  line-height: 0.58rem;
+}
+
+.header .title .line {
+  width: 0.34rem;
+  border-top: 0.01rem solid #fff;
+  position: absolute;
+  bottom: 0.40rem;
+  left: 3.57rem;
+}
+
+.header .title .line:before, .header .title .line:after {
+  content: '';
+  display: block;
+  width: 0.03rem;
+  height: 0.03rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.01rem;
+}
+
+.header .title .line:before {
+  left: 0;
+}
+
+.header .title .line:after {
+  right: 0;
+}
+
+.header .title span {
+  text-transform: uppercase;
+  font-size: 0.13rem;
+  color: #A3E3FF;
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #F2F2F2;
+}
+
+.top {
+  height: 1rem;
+  width: 100%;
+}
+
+.top .top-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5.75rem;
+  height: 0.84rem;
+  border-radius: 0.42rem;
+  background: #293340;
+  padding-left: 1px;
+}
+
+.top .top-content .top-lis {
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+}
+
+.top .top-content .top-lis .cir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1.65rem;
+  height: 0.7rem;
+}
+
+.top .top-content .top-lis .cir h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #FFFFFF;
+  margin-top: 0.13rem;
+}
+
+.top .top-content .top-lis .cir span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 0.14rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+}
+
+.top .top-content li:nth-child(3) .cir {
+  background: url("../img/bg2.png");
+  background-size: cover;
+}
+
+.top .top-content .top-xian1 {
+  height: 0.57rem;
+  width: 1px;
+  position: relative;
+  float: left;
+  background: #C4C4C4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 33%;
+}
+
+.top .top-content .top-xian1 .cir1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian1 .cir2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian2 {
+  height: 0.57rem;
+  width: 1px;
+  position: relative;
+  float: left;
+  background: #C4C4C4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 33%;
+}
+
+.top .top-content .top-xian2 .cir1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.top .top-content .top-xian2 .cir2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  background: #EFEFEF;
+}
+
+.zhou-lis {
+  width: 100%;
+  height: 3.7rem;
+  background: #FFFFFF;
+  border-radius: 0.1rem;
+  margin-top: 0.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.zhou-lis .zhou-content {
+  width: 7rem;
+  height: 100%;
+  margin: 0 auto;
+  margin-right: 0.3rem;
+}
+
+.zhou-lis .zhou-content .zhou-pic {
+  position: relative;
+  width: 2.5rem;
+  height: 100%;
+  float: left;
+}
+
+.zhou-lis .zhou-content .zhou-pic li {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2.5rem;
+  height: 3.5rem;
+  background: url("../img/zhuang.png");
+  background-size: cover;
+}
+
+.zhou-lis .zhou-text {
+  width: 4.2rem;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.zhou-lis .zhou-text .title {
+  margin-top: 0.25rem;
+  font-size: 0.28rem;
+  color: #333333;
+}
+
+.zhou-lis .zhou-text .Eg {
+  font-size: 0.16rem;
+  color: #999999;
+  padding-left: 0.15rem;
+}
+
+.zhou-lis .zhou-text .con {
+  width: 3.85rem;
+  font-size: 0.22rem;
+  color: #666666;
+  padding-left: 0.15rem;
+  line-height: 0.29rem;
+}
+
+.zhou-lis .zhou-text .author {
+  margin-top: 0.2rem;
+}
+
+.zhou-lis .zhou-text .author h1 {
+  font-size: 0.2rem;
+  color: #666666;
+  padding-left: 0.15rem;
+  font-weight: 300;
+  line-height: 0.26rem;
+}
+
+.zhou-lis .zhou-text .xing {
+  width: 1.3rem;
+  height: 0.23rem;
+  margin-left: 0.15rem;
+  margin-top: 0.2rem;
+  background: url("../img/xing.png");
+  background-size: cover;
+}
+
+.zhou-lis .zhou-text .move {
+  width: 2rem;
+  height: 0.59rem;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0.4rem;
+}
+
+.zhou-lis .zhou-text .move a {
+  display: block;
+  width: 2rem;
+  height: 0.59rem;
+  background: url("../img/bg-5.png");
+  background-size: cover;
+  font-size: 0.18rem;
+  color: #FFFFFF;
+  padding-left: 0.59rem;
+  line-height: 0.59rem;
+}

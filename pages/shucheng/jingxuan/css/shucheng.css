@@ -1,0 +1,323 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: '苹方'; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+.top {
+  height: 1rem;
+  width: 100%;
+  background: #29a6dc; }
+  .top .circle1 {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 0.02rem solid #076CBE;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.25rem; }
+    .top .circle1 .search {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0.25rem;
+      height: 0.22rem;
+      background: #fff url("../img/search.png") no-repeat;
+      background-size: cover; }
+  .top .top-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 5.75rem;
+    height: 0.84rem;
+    border-radius: 0.42rem;
+    background: #293340;
+    padding-left: 1px; }
+    .top .top-content .top-lis {
+      width: 33.33333%;
+      float: left;
+      height: 100%; }
+      .top .top-content .top-lis .cir {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 1.65rem;
+        height: 0.7rem; }
+        .top .top-content .top-lis .cir a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          .top .top-content .top-lis .cir a h1 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 0.24rem;
+            color: #FFFFFF;
+            margin-top: 0.13rem; }
+          .top .top-content .top-lis .cir a span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: #FFFFFF;
+            font-size: 0.14rem;
+            font-weight: 200;
+            text-align: center;
+            text-transform: uppercase;
+            bottom: 0; }
+    .top .top-content li:nth-child(1) .cir {
+      background: url("../img/bg2.png");
+      background-size: cover; }
+    .top .top-content .top-xian1 {
+      height: 0.57rem;
+      width: 1px;
+      position: relative;
+      float: left;
+      background: #C4C4C4;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 33%; }
+      .top .top-content .top-xian1 .cir1 {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        background: #EFEFEF; }
+      .top .top-content .top-xian1 .cir2 {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -2px;
+        left: -1px;
+        background: #EFEFEF; }
+    .top .top-content .top-xian2 {
+      height: 0.57rem;
+      width: 1px;
+      position: relative;
+      float: left;
+      background: #C4C4C4;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 33%; }
+      .top .top-content .top-xian2 .cir1 {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        background: #EFEFEF; }
+      .top .top-content .top-xian2 .cir2 {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -2px;
+        left: -1px;
+        background: #EFEFEF; }
+
+.foot {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background: url("../img/bg5.png");
+  background-size: cover; }
+  .foot .foot-lis {
+    width: 33.33333%;
+    height: 100%;
+    border-right: 1px solid #717171;
+    float: left; }
+    .foot .foot-lis i {
+      display: block;
+      width: 0.45rem;
+      height: 0.45rem;
+      margin: 0 auto;
+      margin-top: 0.1rem; }
+    .foot .foot-lis span {
+      display: block;
+      font-size: 0.24rem;
+      color: #646567;
+      margin: 0 auto;
+      text-align: center; }
+  .foot .foot-lis:nth-child(3) {
+    border: none; }
+  .foot .foot-lis:nth-child(1) i {
+    background: url("../img/icon3.png");
+    background-position: 0 0;
+    background-size: cover; }
+  .foot .foot-lis:nth-child(2) i {
+    background: url("../img/icon3.png");
+    background-position: -1.05rem 0;
+    background-size: cover; }
+  .foot .foot-lis:nth-child(2) span {
+    color: #FFFFFF; }
+  .foot .foot-lis:nth-child(3) i {
+    background: url("../img/icon3.png");
+    background-position: -0.5rem 0;
+    background-size: cover; }
+
+.banner {
+  width: 100%;
+  height: 4.83rem;
+  position: relative; }
+  .banner .banner-pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/shucheng/banner.jpg);
+    background-size: cover; }
+    .banner .banner-pic h1 {
+      height: 0.4rem;
+      margin-top: 1rem;
+      margin-left: 0.9rem;
+      font-size: 0.36rem;
+      color: #1b1c1e; }
+    .banner .banner-pic div {
+      width: 1.8rem;
+      height: 1px;
+      margin-left: 0.9rem;
+      background: #a1a6bb;
+      margin-top: 0.3rem; }
+    .banner .banner-pic p {
+      height: 0.3rem;
+      margin-left: 0.9rem;
+      color: #585b62;
+      font-size: 0.24px;
+      margin-top: 0.2rem;
+      font-weight: 500; }
+      .banner .banner-pic p span {
+        font-weight: 600;
+        color: #818593; }
+  .banner .dian {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -0.15rem;
+    width: 0.45rem;
+    height: 0.08rem; }
+    .banner .dian .dian-lis {
+      width: 0.08rem;
+      height: 0.08rem;
+      border-radius: 50%;
+      border: 1px solid #0090FF;
+      float: left;
+      margin-right: 0.06rem; }
+    .banner .dian .dian-lis:nth-child(1) {
+      background: #0090FF; }
+
+.newjia {
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 0.2rem; }
+  .newjia .xin {
+    position: relative; }
+    .newjia .xin h1 {
+      font-size: 0.3rem;
+      color: #333333;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      margin-left: 0.6rem; }
+    .newjia .xin h2 {
+      font-size: 0.25rem;
+      color: #666666;
+      height: 0.25rem;
+      line-height: 0.25rem;
+      margin-left: 0.6rem; }
+    .newjia .xin .tubiao {
+      position: absolute;
+      top: 0.05rem;
+      left: 0.15rem;
+      width: 0.31rem;
+      height: 0.31rem;
+      background: url(../img/shucheng/biao.png);
+      background-size: cover; }
+  .newjia .book-1 {
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto; }
+    .newjia .book-1 .book-lis {
+      margin-top: 0.3rem;
+      width: 33.33333%;
+      float: left; }
+      .newjia .book-1 .book-lis a {
+        margin: 0 auto;
+        display: block;
+        width: 1.8rem; }
+        .newjia .book-1 .book-lis a img {
+          width: 100%;
+          height: 2.55rem; }
+        .newjia .book-1 .book-lis a span {
+          font-size: 0.2rem;
+          color: #333333;
+          line-height: 0.3rem;
+          display: inline-block; }
+        .newjia .book-1 .book-lis a p {
+          text-align: left;
+          font-size: 0.18rem;
+          color: #999999;
+          font-style: normal; }
