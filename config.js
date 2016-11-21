@@ -1,12 +1,37 @@
-app.config([
-	"$routeProvider",
-	function($routeProvider){
-		// 模板
-		$routeProvider.when("/shucheng",{
-			templateUrl:"pages/shucheng/jingxuan/jingxuan.html",
-			controller:"jingxuanCtrl"
-		}).when("/bangdan",{
-			templateUrl:"pages/shucheng/bangdan/bangdan.html",
-			controller:"bangdanCtrl"
-		})
-	}])
+app.config(["$routeProvider",function($routeProvider){
+    $routeProvider.when("/wenzhang",{
+        templateUrl:"pages/zhangjie/wenzhang/zhangjie.html",
+        controller:"wenzhangCtrl"
+    }).when("/wodibiji",{
+        templateUrl:"pages/zhangjie/wodibiji/biji.html",
+        controller:"bijiCtrl"
+    }).when("/mulu",{
+        templateUrl:"pages/zhangjie/mulu/mulu.html",
+        controller:"muluCtrl"
+    }).when("/shuye1",{
+        templateUrl:"pages/book-page/shuye1/shuye.html",
+        controller:"shuye1Ctrl"
+    }).when('/shuye3',{
+        templateUrl:"pages/book-page/shuye3/shuye.html",
+        controller:"shuye3Ctrl"
+    }).when('/shuye6',{
+        templateUrl:"pages/book-page/shuye6/shuye.html",
+        controller:"shuye6Ctrl"
+    }).when('/shuye4',{
+        templateUrl:"pages/book-page/shuye4/shuye.html",
+        controller:"shuye4Ctrl"
+    }).when('/shuye5',{
+        templateUrl:"pages/book-page/shuye5/shuye.html",
+        controller:"shuye5Ctrl"
+    }).when("/shucheng",{
+		templateUrl:"pages/shucheng/jingxuan/jingxuan.html",
+		controller:"jingxuanCtrl"
+	}).when("/bangdan",{
+		templateUrl:"pages/shucheng/bangdan/bangdan.html",
+		controller:"bangdanCtrl"
+	}).when("/fenlei",{
+		templateUrl:"pages/shucheng/fenlei/fenlei.html",
+		controller:"fenleiCtrl"
+	})
+}])
+

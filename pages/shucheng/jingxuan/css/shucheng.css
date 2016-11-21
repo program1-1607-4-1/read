@@ -118,9 +118,6 @@ img {
             text-align: center;
             text-transform: uppercase;
             bottom: 0; }
-    .top .top-content li:nth-child(1) .cir {
-      background: url("../img/bg2.png");
-      background-size: cover; }
     .top .top-content .top-xian1 {
       height: 0.57rem;
       width: 1px;
