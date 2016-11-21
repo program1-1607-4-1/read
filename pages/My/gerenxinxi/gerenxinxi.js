@@ -1,12 +1,3 @@
-//$(function(){
-//	$('.gengxin').on('touchend',function(){
-//		$('.box').addClass('xian');
-//	})
-//	$('.box').on('touchend',function(){
-//		$('.box').removeClass('xian');
-//	})
-//
-//})
 
 
 app.controller('gerenxinxiCtrl',['$scope',function($scope){
@@ -16,20 +7,20 @@ app.controller('gerenxinxiCtrl',['$scope',function($scope){
     ]
 }])
 
-app.directive('ngX',[function(){
+app.directive('ngGenxin',[function(){
     return{
         restrict:"A",
         replace:true,
-        template:'<li class="gengxin"><div ng-transclude></div></li>',
         transclude:true,
+        template:'<li class="gengxin"><div ng-transclude></div></li>',
         link:function($scope,el){
-            $('.gengxin').on('touchend',function(){
-			$('.box').addClass('xian');
-		})
-		$('.box').on('touchend',function(){
-			$('.box').removeClass('xian');
-		})
-      }
+            $(el).on('touchend',function(){
+			    $('.box').addClass('xian1');
+            })
+    		$('.box').on('touchend',function(){
+    			$('.box').removeClass('xian1');
+    		})
+        }
     }
 }])
 

@@ -1,0 +1,24 @@
+app.controller('zhuceCtrl',['$scope',function($scope){
+    $scope.a=[
+        {},
+        {}
+    ]
+}]);
+app.controller('zhuce1Ctrl',['$scope',function($scope){
+    $scope.a=[
+        {},
+        {}
+    ]
+}]);
+app.controller('zhuce2Ctrl',['$scope',function($scope){
+    $scope.a=[
+        {},
+        {}
+    ]
+}]);
+app.controller('zhuce3Ctrl',['$scope',function($scope){
+    $scope.a=[
+        {},
+        {}
+    ]
+}]);
