@@ -1,0 +1,156 @@
+@import 'base';
+ img{
+     vertical-align: middle;
+ }
+ body{
+     background: #FAFAFA;
+ }
+ ul,li{
+     list-style: none;
+ }
+ .icon{
+    font-family: 'iconfont'!important;
+}
+
+
+//头部
+ .head{
+     
+     width: 100%;
+     height: 1.1rem;
+     background: #2BA6DC;
+     padding-left: 0.25rem;
+     padding-right: 0.25rem;
+     padding-top: 0.2rem;
+     text-align: center;
+     .shezhi{
+         position: absolute;
+         top:0;
+         bottom: 0;
+         left: 0.5rem;
+         margin: auto;
+         
+     }
+     .china{
+         font-size: 0.36rem;
+         color: #fff;
+         
+     }
+     .english{
+         font-size: 0.18rem;
+         color: #fff;
+         margin-top: 0.05rem;
+     }
+ }
+ 
+ .text{
+     width: 100%;
+     position: absolute;
+     top: 1.8rem;
+     left: 0;
+     text-align: center;
+     .ke{
+         width: 100%;
+         height: 0.92rem;
+//       float: left;
+//       overflow: hidden;
+     }
+     .frist{
+//       @include lr;
+         padding-left:1.9rem ;
+     }
+     .er{
+         padding-left:0.9rem ;
+     }
+     .san{
+         padding-left:1.7rem ;
+     }
+     .si{
+         padding-left:1.2rem ;
+     }
+     .wu{
+          padding-left:1.6rem ;
+     }
+     .liu{
+         padding-left:0.7rem ;
+     }
+     .qi{
+         padding-left:1.9rem ;
+     }
+     ul{
+          float: left;
+          height: 0.62rem;
+          margin-top:0.3rem ;
+
+         li{
+             width: auto;
+             height: 0.62rem;
+             float: left;
+             margin-right: 0.5rem;
+             overflow: hidden;
+             padding-left:0.3rem ;
+             padding-right:0.3rem ;
+             border: 1px solid #B0B0B0;
+             border-radius: 15px;
+             line-height: 0.62rem;
+             font-size: 0.28rem;
+             color: #838383;
+              
+         }
+         .ling{
+             background: #29A6DC;
+             color: #fff;
+             border: 0;
+             padding-left:0.1rem ;
+             padding-right:0.1rem ;
+         }
+     }
+     
+     
+     
+ }
+
+
+
+
+
+
+
+
+
+.tijiao{
+    width: 6rem;
+    height: 0.74rem;
+    background: #28DD8B;
+    @include lr;
+    margin-top: 10rem;
+    border-radius:25px;
+    .zuo{
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        border-radius:50% ;
+        position: absolute;
+         top:0;
+         bottom: 0;
+         left: 0.3rem;
+         margin: auto;
+    }
+    .you{
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        border-radius:50% ;
+        position: absolute;
+         top:0;
+         bottom: 0;
+         right: 0.3rem;
+         margin: auto;
+    }
+    .zi{
+        color: #fff;
+        font-size:0.25rem;
+        text-align: center;
+        padding-top: 0.23rem;
+    }
+ }

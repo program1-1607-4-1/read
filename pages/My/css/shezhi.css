@@ -1,0 +1,521 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+img {
+  vertical-align: middle; }
+
+body {
+  background: #FAFAFA; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.icon {
+  font-family: "iconfont" !important; }
+
+.head {
+  width: 100%;
+  height: 1.1rem;
+  background: #2BA6DC;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.2rem;
+  text-align: center; }
+  .head .z {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.25rem;
+    margin: auto;
+    z-index: 33; }
+  .head .shezhi {
+    transform: scale(0.5); }
+  .head .y {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.25rem;
+    margin: auto;
+    z-index: 33; }
+  .head .xiaoxi {
+    transform: scale(0.5); }
+  .head .china {
+    font-size: 0.36rem;
+    color: #fff; }
+  .head .english {
+    font-size: 0.18rem;
+    color: #fff;
+    margin-top: 0.05rem; }
+
+.ul {
+  width: 100%;
+  height: 3.7rem; }
+
+ul {
+  width: 7.1rem;
+  height: 3.7rem;
+  border: 2px solid #EBEBEB;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  background: #fff; }
+  ul li {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px dashed #C5C5C5; }
+    ul li img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.08rem;
+      margin: auto;
+      transform: scale(0.5); }
+    ul li .s-y {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0.1rem;
+      margin: auto;
+      font-size: 0.25rem;
+      color: #3D3D3D;
+      line-height: 0.925rem; }
+      ul li .s-y .icon {
+        color: #AEDDF1; }
+    ul li .s-y1 {
+      padding-top: 0.25rem; }
+      ul li .s-y1 .kai {
+        padding: 0.05rem;
+        width: 0.94rem;
+        height: 0.4rem;
+        background: #3D91FD;
+        border-radius: 15px; }
+        ul li .s-y1 .kai .yuan {
+          width: 0.3rem;
+          height: 0.3rem;
+          border-radius: 50%;
+          background: #FAFAFA;
+          position: absolute;
+          right: 0.05rem; }
+    ul li .china {
+      color: #3D3D3D;
+      font-size: 0.25rem;
+      padding-left: 0.8rem;
+      padding-top: 0.15rem; }
+    ul li .english {
+      color: #959595;
+      font-size: 0.125rem;
+      padding-left: 0.8rem; }
+  ul .last {
+    border: 0; }
+
+.tijiao {
+  width: 6rem;
+  height: 0.74rem;
+  background: #28DD8B;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 6.6rem;
+  border-radius: 25px; }
+  .tijiao .zuo {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.3rem;
+    margin: auto; }
+  .tijiao .you {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.3rem;
+    margin: auto; }
+  .tijiao .zi {
+    color: #fff;
+    font-size: 0.25rem;
+    text-align: center;
+    padding-top: 0.23rem; }
+
+.box {
+  width: 100%;
+  height: 13rem;
+  background: rgba(3, 3, 3, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  transform: scale(0); }
+  .box .tishi {
+    width: 4.8rem;
+    height: 5.66rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 0.2rem;
+    top: 3.24rem; }
+    .box .tishi .top {
+      width: 100%;
+      height: 15%;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem;
+      background: #27D4B5; }
+      .box .tishi .top img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.6rem;
+        margin: auto;
+        transform: scale(0.5); }
+      .box .tishi .top .china {
+        color: #E9FBF7;
+        font-size: 0.25rem;
+        padding-left: 1.2rem;
+        padding-top: 0.1rem; }
+      .box .tishi .top .english {
+        color: #E9FBF7;
+        font-size: 0.125rem;
+        padding-left: 1.2rem; }
+    .box .tishi .bottom {
+      width: 100%;
+      height: 75%; }
+      .box .tishi .bottom ul {
+        width: 95%;
+        height: 3.3rem;
+        border: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 5px;
+        background: #fff; }
+        .box .tishi .bottom ul li {
+          width: 100%;
+          height: 25%;
+          border-bottom: 1px dashed #C5C5C5; }
+          .box .tishi .bottom ul li .china {
+            color: #3D3D3D;
+            font-size: 0.25rem;
+            padding-left: 0.2rem;
+            padding-top: 0.1rem; }
+          .box .tishi .bottom ul li .english {
+            color: #959595;
+            font-size: 0.125rem;
+            padding-left: 0.2rem; }
+          .box .tishi .bottom ul li .cri {
+            width: 0.35rem;
+            height: 0.35rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0.2rem;
+            border: 1px solid #98EEDF;
+            border-radius: 50%;
+            padding: 0.08rem; }
+            .box .tishi .bottom ul li .cri .xin {
+              width: 0.16rem;
+              height: 0.16rem;
+              border-radius: 50%;
+              background: #98EEDF; }
+      .box .tishi .bottom .quxiao {
+        width: 1.5rem;
+        height: 0.6rem;
+        background: #fff;
+        border-radius: 25px;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0.5rem;
+        border: 1px solid #28DD8B; }
+        .box .tishi .bottom .quxiao .zuo {
+          width: 5px;
+          height: 5px;
+          background: #28DD8B;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0.3rem;
+          margin: auto; }
+        .box .tishi .bottom .quxiao .you {
+          width: 5px;
+          height: 5px;
+          background: #28DD8B;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0.3rem;
+          margin: auto; }
+        .box .tishi .bottom .quxiao .zi {
+          color: #28DD8B;
+          font-size: 0.25rem;
+          text-align: center;
+          padding-top: 0.14rem; }
+      .box .tishi .bottom .queding {
+        width: 1.5rem;
+        height: 0.6rem;
+        background: #28DD8B;
+        border-radius: 25px;
+        position: absolute;
+        bottom: -0.2rem;
+        right: 0.5rem; }
+        .box .tishi .bottom .queding .zuo {
+          width: 5px;
+          height: 5px;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0.3rem;
+          margin: auto; }
+        .box .tishi .bottom .queding .you {
+          width: 5px;
+          height: 5px;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0.3rem;
+          margin: auto; }
+        .box .tishi .bottom .queding .zi {
+          color: #fff;
+          font-size: 0.25rem;
+          text-align: center;
+          padding-top: 0.14rem; }
+
+.xian {
+  transform: scale(1); }
+
+.muohu {
+  filter: blur(3px); }
+
+.qingchu {
+  width: 100%;
+  height: 13rem;
+  background: rgba(3, 3, 3, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  transform: scale(0); }
+  .qingchu .tishi {
+    width: 4.8rem;
+    height: 5.66rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 0.2rem;
+    top: 3.24rem; }
+    .qingchu .tishi .top {
+      width: 100%;
+      height: 15%;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem;
+      background: #27D4B5; }
+      .qingchu .tishi .top .left {
+        float: left; }
+        .qingchu .tishi .top .left img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0.6rem;
+          margin: auto;
+          transform: scale(0.5); }
+        .qingchu .tishi .top .left .china {
+          color: #E9FBF7;
+          font-size: 0.25rem;
+          padding-left: 1.2rem;
+          padding-top: 0.1rem; }
+        .qingchu .tishi .top .left .english {
+          color: #E9FBF7;
+          font-size: 0.125rem;
+          padding-left: 1.2rem; }
+      .qingchu .tishi .top .right {
+        float: right; }
+        .qingchu .tishi .top .right img {
+          position: absolute;
+          top: 0.35rem;
+          bottom: 0;
+          right: 0.25rem;
+          margin: auto;
+          transform: scale(0.5); }
+        .qingchu .tishi .top .right .china {
+          color: #E9FBF7;
+          font-size: 0.125rem;
+          padding-right: 0.8rem;
+          padding-top: 0.3rem; }
+    .qingchu .tishi .bottom {
+      width: 100%;
+      height: 75%; }
+      .qingchu .tishi .bottom ul {
+        width: 95%;
+        height: 3.3rem;
+        border: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 5px;
+        background: #fff; }
+        .qingchu .tishi .bottom ul li {
+          width: 100%;
+          height: 25%;
+          border-bottom: 1px dashed #C5C5C5; }
+          .qingchu .tishi .bottom ul li .china {
+            color: #3D3D3D;
+            font-size: 0.25rem;
+            padding-left: 0.2rem;
+            padding-top: 0.1rem; }
+          .qingchu .tishi .bottom ul li .english {
+            color: #959595;
+            font-size: 0.125rem;
+            padding-left: 0.2rem; }
+          .qingchu .tishi .bottom ul li .cri {
+            width: 0.35rem;
+            height: 0.35rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0.2rem;
+            border: 1px solid #98EEDF;
+            border-radius: 50%;
+            padding: 0.08rem; }
+            .qingchu .tishi .bottom ul li .cri .xin {
+              width: 0.16rem;
+              height: 0.16rem;
+              border-radius: 50%;
+              background: #98EEDF; }
+      .qingchu .tishi .bottom .quxiao {
+        width: 1.5rem;
+        height: 0.6rem;
+        background: #fff;
+        border-radius: 25px;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0.5rem;
+        border: 1px solid #28DD8B; }
+        .qingchu .tishi .bottom .quxiao .zuo {
+          width: 5px;
+          height: 5px;
+          background: #28DD8B;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0.3rem;
+          margin: auto; }
+        .qingchu .tishi .bottom .quxiao .you {
+          width: 5px;
+          height: 5px;
+          background: #28DD8B;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0.3rem;
+          margin: auto; }
+        .qingchu .tishi .bottom .quxiao .zi {
+          color: #28DD8B;
+          font-size: 0.25rem;
+          text-align: center;
+          padding-top: 0.14rem; }
+      .qingchu .tishi .bottom .queding {
+        width: 1.5rem;
+        height: 0.6rem;
+        background: #28DD8B;
+        border-radius: 25px;
+        position: absolute;
+        bottom: -0.2rem;
+        right: 0.5rem; }
+        .qingchu .tishi .bottom .queding .zuo {
+          width: 5px;
+          height: 5px;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0.3rem;
+          margin: auto; }
+        .qingchu .tishi .bottom .queding .you {
+          width: 5px;
+          height: 5px;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0.3rem;
+          margin: auto; }
+        .qingchu .tishi .bottom .queding .zi {
+          color: #fff;
+          font-size: 0.25rem;
+          text-align: center;
+          padding-top: 0.14rem; }
+
+.show {
+  transform: scale(1); }
