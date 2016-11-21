@@ -1,0 +1,288 @@
+@charset "UTF-8";
+html {
+	font-size: 100px;
+}
+
+body {
+	font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+	html {
+		font-size: 42.66667px;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	html {
+		font-size: 48px;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	html {
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 412px) {
+	html {
+		font-size: 54.93333px;
+	}
+}
+
+@media screen and (min-width: 414px) {
+	html {
+		font-size: 55.2px;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	box-sizing: border-box;
+	font-family: "苹方";
+}
+
+img {
+	border: none;
+}
+
+
+/*上下居中:@include tb*/
+
+
+/*左右居中: @include lr*/
+
+
+/*居中:@include center*/
+
+
+/*圆:@include yuan*/
+
+
+/*宽高:@include wh($w,$h)*/
+
+
+/*调试所用边框：@include border*/
+
+
+/*图片居中：@include img-center*/
+
+.information {
+	width: 100%;
+	height: 1.1rem;
+	margin: auto;
+	background: #29A6DC;
+}
+
+.information .newback {
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	left: 0.4rem;
+	top: 0.2rem;
+	border-radius: 50%;
+}
+
+.information .myinformation {
+	width: 1.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 0.2rem;
+	left: 50%;
+	margin-left: -0.9rem;
+}
+
+.information .myinformation p:nth-child(1) {
+	color: white;
+	font-size: 0.4rem;
+}
+
+.information .myinformation p:nth-child(2) {
+	color: #76CCF4;
+	font-size: 0.2rem;
+}
+
+.wcontent {
+	width: 100%;
+	height: 12.23rem;
+	background: #FAFAFA;
+}
+
+.wcontent .news {
+	width: 5.6rem;
+	height: 0.9rem;
+	position: absolute;
+	top: 0.3rem;
+	left: 50%;
+	margin-left: -2.8rem;
+	background: #2A3441;
+	border-radius: 1rem;
+}
+
+.wcontent .news .system {
+	width: 2.3rem;
+	height: 0.7rem;
+	border-radius: 0.8rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.1rem;
+	text-align: center;
+}
+
+.wcontent .news .system .wz {
+	width: 2.3rem;
+	height: 0.7rem;
+	margin-top: 0.03rem;
+}
+
+.wcontent .news .system .wz p:nth-child(1) {
+	color: white;
+	font-size: 0.2rem;
+}
+
+.wcontent .news .system .wz p:nth-child(2) {
+	color: #efefef;
+	font-size: 0.1rem;
+}
+
+.wcontent .news .actives {
+	background: #29A6DC;
+	border: 2px solid #fff;
+}
+
+.wcontent .news .system1 {
+	width: 2.3rem;
+	height: 0.7rem;
+	border-radius: 0.8rem;
+	position: absolute;
+	right: 0.1rem;
+	top: 0.1rem;
+	text-align: center;
+}
+
+.wcontent .news .system1 .wz1 {
+	width: 2.3rem;
+	height: 0.7rem;
+	margin-top: 0.03rem;
+}
+
+.wcontent .news .system1 .wz1 p:nth-child(1) {
+	color: white;
+	font-size: 0.2rem;
+}
+
+.wcontent .news .system1 .wz1 p:nth-child(2) {
+	color: #efefef;
+	font-size: 0.1rem;
+}
+
+.wcontent .news .active {
+	background: #29A6DC;
+	border: 2px solid #fff;
+}
+
+.wcontent .wcon .wcontent1 {
+	width: 7.1rem;
+	height: 8rem;
+	background: #fff;
+	position: absolute;
+	top: 1.3rem;
+	left: 50%;
+	margin-left: -3.55rem;
+}
+
+.wcontent .wcon .wcontent1 .newbook {
+	width: 100%;
+	height: 0.8rem;
+	border-bottom: 2px dashed #BEBEBE;
+}
+
+.wcontent .wcon .wcontent1 .newbook img {
+	display: block;
+	float: left;
+	margin-left: 0.1rem;
+}
+
+.wcontent .wcon .wcontent1 .newbook p {
+	font-size: 0.35rem;
+	display: block;
+	width: 100%;
+	height: 0.4rem;
+	margin-top: 0.15rem;
+}
+
+.wcontent .wcon .wcontent1 .newbook span {
+	color: #C5C5C5;
+	/*margin-left: 0.15rem;*/
+}
+
+.wcontent .wcon .wcontent1 .newbook .you {
+	float: right;
+	margin-right: 0.3rem;
+	margin-top: -0.3rem;
+	color: #29A6DC;
+	font-weight: bold;
+}
+
+.wcontent .wcon .wcontent2 {
+	width: 7.1rem;
+	height: 8rem;
+	background: #fff;
+	position: absolute;
+	z-index: 2;
+	top: 1.3rem;
+	left: 50%;
+	margin-left: -3.55rem;
+	transform: translateX(7.5rem);
+	display: none;
+}
+
+.wcontent .wcon .wcontent2 .newbook {
+	width: 100%;
+	height: 1.3rem;
+	border-bottom: 2px dashed #BEBEBE;
+}
+
+.wcontent .wcon .wcontent2 .newbook img {
+	display: block;
+	float: left;
+	margin-left: 0.1rem;
+}
+
+.wcontent .wcon .wcontent2 .newbook .shuname {
+	font-size: 0.35rem;
+	color: #484848;
+	display: block;
+	margin-left: 1.4rem;
+	margin-top: 0.05rem;
+}
+
+.wcontent .wcon .wcontent2 .newbook .shuneirong {
+	font-size: 0.1rem;
+	display: block;
+	margin-left: 1.4rem;
+	margin-top: 0.05rem;
+	color: #C5C5C5;
+}
+
+.wcontent .wcon .wcontent2 .newbook span {
+	color: #C5C5C5;
+	margin-left: 0.15rem;
+}
+
+.wcontent .wcon .wcontent2 .newbook .you {
+	float: right;
+	margin-right: 0.2rem;
+	margin-top: -0.9rem;
+	color: #C5C5C5;
+	font-size: 0.2rem;
+}
+
+.wcontent .wcon .wcontent2 .newbook .you img {
+	display: block;
+	margin-right: 0.2rem;
+}
