@@ -199,8 +199,14 @@ a{
       left: 0;
       bottom: 0;
       background: #151C2B;
-      .LL{
+      a{
+          display: block;
           width: 33.3%;
+          height: 100%;
+          float: left;
+          z-index: 333;
+      .LL{
+          width: 100%;
           height: 100%;
           border: 0;
           border-right: 1px solid #515357;
@@ -218,8 +224,8 @@ a{
           border: 0;
           color: #F3F3F5;
       }
-  }
-
+   }
+ }
 .box{
     width: 100%;
     height: 100%;

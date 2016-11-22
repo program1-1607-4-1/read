@@ -1,0 +1,27 @@
+app.controller('shuye6Ctrl',['$scope',function($scope){
+    $scope.a=[
+        {},
+        {}
+    ]
+    $scope.quxiao=function(){
+        $(".tanchuang").css('display',"none");
+    }
+}])
+app.directive('ngText',[function(){
+    return{
+        restrict:"A",
+        replace:true,
+        template:'<div class="box_neirong"><div ng-transclude></div></div>',
+        transclude:true,
+        link:function($scope,el){
+            $(document).on('keyup','textarea',function(e){
+                console.log(e.keyCode);
+                if(e.keyCode===13){
+                    if($(this).text()!==""){
+                        $(".tanchuang").css('display',"block");
+                    }
+                }
+            })
+        }
+    }
+}])

@@ -1,5 +1,6 @@
-@import"base";
-*{
+@import"../../../../../base";
+.filterl{
+    *{
     outline:none;
 }
 body{
@@ -174,7 +175,7 @@ body{
              top:0.06rem;
          }
          .eng{
-             font-size:0.1rem;
+             font-size:0.06rem;
              color:#A0CFE5;
              text-align:center;
              top:0.06rem;
@@ -212,3 +213,9 @@ body{
           }
       }
   }
+  a{
+      display:block;
+      width:100%;
+      height:100%;
+  }
+}

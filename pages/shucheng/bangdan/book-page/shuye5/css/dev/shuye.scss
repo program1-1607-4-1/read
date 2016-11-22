@@ -1,0 +1,370 @@
+@import "base";
+$color:#29a6dc;
+html,body{
+    -webkit-text-size-adjust:none;
+}
+.box5{
+    width: 100%;
+    height: 100%;
+}
+//head
+.head{
+    height: 1rem;
+    background: $color;
+    .head_Left{
+        width: .44rem;
+        height: .44rem;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid #096dbe;
+        line-height: .44rem;
+        text-align: center;
+        @include tb;
+        margin: {
+            left: .24rem;
+        };
+        overflow: hidden;
+        span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url($img-url+"shuye/fanhui.png") no-repeat;
+            background-size:.28rem .28rem;
+            background-position: 2px center;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                @include center;
+                z-index: 100;
+            }
+        }
+    }
+    .head_zhong{
+        @include center;
+        text-align: center;
+        line-height: .3rem;
+//      border: 1px solid #000;
+        color: #fffefe;
+        h1{
+            font-size: 20px;
+            font-weight: 300;
+            margin: {
+                top: .19rem;
+                bottom: .1rem;
+            };
+        }
+        span{
+//          text-transform: uppercase;
+            font-size: 7px;
+            color: #a3e3ff;
+        }
+        .head_img{
+            @include center;
+            top: .2rem;
+            .head_gan{
+                height:1px;
+                width: .29rem;
+                background: #FFFFFF;
+                @include center;
+                .head_yuan1{
+                    position: absolute;
+                    left: -0.03rem;
+                    top: -0.01rem;
+                    width: 0.06rem;
+                    height: 0.06rem;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                }
+                .head_yuan2{
+                    position: absolute;
+                    right: -0.03rem;
+                    top: -0.01rem;
+                    width: 0.06rem;
+                    height: 0.06rem;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                }
+            }
+            
+        }
+    }
+}
+//书签
+.box_shuqian1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .shuqian_nei{
+        width: 100%;
+        .shuqian_xia{
+            width:100%;
+//          display: inline-block;
+//          height: 1.18rem;
+            overflow: hidden;
+            border-bottom: 1px dashed #999999;
+            padding: {
+                top:.13rem;
+                left: .53rem;
+                right: .44rem;
+                bottom: .11rem;
+            };
+            .shuqianxia_left{
+                float: left;
+                width: .74rem;
+                height:1.8rem;
+                margin: {
+                    right:.25rem ;
+                };
+                .shuqian_touxiang{
+                    @include tb;
+                    width: .74rem;
+                    height:.74rem;
+                    background: url($img-url+'shuye/shuye_63.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+            .xia_left_active{
+                display: none;
+            }
+            .shuqianxia_right{
+                float: left;
+                width: 5.34rem;
+//              height: .88rem;
+                h2{
+                    font-size: 12px;
+                    color: #151c2b;
+                }
+                span{
+                    display: block;
+                    width:100%;
+                    font-size: 9px;
+                    color: #505050;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                .biji_xie{
+                    width: 5.33rem;
+                    height: .87rem;
+                    border: 1px solid #e9e9e9;
+                    border-radius: 10px;
+                    background: #9ae1ff;
+                    font-size: 10px;
+                    color: #ec2e56;
+                    padding: {
+                        top: .08rem;
+                    };
+                    .biji_xie_tu{
+                        width: .52rem;
+                        height: .49rem;
+                        float: left;
+                        .xie_tu{
+                            background: url($img-url+"shuye/shuye_03.png") no-repeat;
+                            background-size: cover;
+                            width: .21rem;
+                            height: .21rem;
+                            @include lr;
+                            top: .05rem;
+                            left: 0.23rem;
+                        }
+                        .xie_tu_active{
+                            background: url($img-url+"shuye/shuye_20.png") no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    p{
+                        float: left;
+                    }
+                    .biji_xie_dian1{
+                        @include yuan(0.06rem);
+                        background: #FFFFFF;
+                        position: absolute;
+                        left: .1rem;
+                        top: .1rem;
+                    }
+                    .biji_xie_dian2{
+                        @include yuan(0.06rem);
+                        background: #FFFFFF;
+                        position: absolute;
+                        left: .1rem;
+                        bottom: .1rem;
+                    }
+                    .biji_xie_dian3{
+                        @include yuan(0.06rem);
+                        background: #FFFFFF;
+                        position: absolute;
+                        right: .1rem;
+                        bottom: .1rem;
+                    }
+                    .biji_xie_dian4{
+                        @include yuan(0.06rem);
+                        background: #FFFFFF;
+                        position: absolute;
+                        right: .1rem;
+                        top: .1rem;
+                    }
+                    .dian_active{
+                        display: none;
+                    }
+                }
+                .biji_xie_active{
+                    background: none;
+                    border: none;
+                    color: #1d9563;
+                }
+                .biji_xie_active1{
+                    background: none;
+                    border: none;
+                }
+                .shuqianxiaRX_shijian{
+                    float: left;
+//                  width: 50%;
+                    .shijian_tu{
+                        float: left;
+                        width: .35rem;
+                        height: .35rem;
+                        span{
+                            width: .18rem;
+                            height: .18rem;
+                            border-radius: 50%;
+                            @include center;
+                            background: url($img-url+"shuye/shuye_11.png") no-repeat;
+                            background-size: cover;
+                        }
+                        .tu1_active{
+                            background: url($img-url+"shuye/shuye_01_25.png") no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    .shijian{
+                        float: left;
+                        font-size: 9px;
+                        color: #7f7f7f;
+                        margin: {
+                            left: 0.06rem;
+                        };
+                    }
+                    .color_active{
+                        color: #FFFFFF;
+                    }
+                }
+                .shuqianxiaRX_shoucang{
+                    float: left;
+//                  width: 50%;
+                    margin: {
+                        left: .17rem;
+                    };
+                    .shoucang_tu{
+                        float: right;
+                        width: .35rem;
+                        height: .35rem;
+                        span{
+                            width: .24rem;
+                            height: .14rem;
+                            border-radius: 50%;
+                            @include center;
+                            background: url($img-url+"shuye/shuye_09.png") no-repeat;
+                            background-size: cover;
+                        }
+                        .tu2_active{
+                            background: url($img-url+"shuye/shuye_27.png") no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    .shoucang{
+                        float: right;
+                        font-size: 9px;
+                        color: #7f7f7f;
+                        margin: {
+                            left: 0.06rem;
+                        };
+                    }
+                    .color_active{
+                        color: #FFFFFF;
+                    }
+                }
+                .del{
+                    @include tb;
+                    right: -0.6rem;
+                    width: .31rem;
+                    height: .31rem;
+                    background: url($img-url+"shuye/shuye_23.png") no-repeat;
+                    background-size: cover;
+                }
+                .color_active{
+                    color: #FFFFFF;
+                }
+                .yuan4{
+                    position: absolute;
+                    right: -0.04rem;
+                    top: 0rem;
+                    width: 0.09rem;
+                    height: .46rem;
+                    .yuan{
+                        @include yuan(0.09rem);
+                        background: #29dcbc;
+                        margin: {
+                            bottom: 0.02rem;
+                        };
+                    }
+                }
+            }
+            .xia_right_active{
+                background:#29dcbc ;
+                width: 6.55rem;
+                height: 100%;
+                padding: {
+                    top:.13rem;
+                    left: .53rem;
+                    right: .44rem;
+                    bottom: .11rem;
+                };
+            }
+        }
+        .shuqian_xia2{
+            border-bottom: 1px solid #29dcbc;
+        }
+        .shuqian_xia1{
+            padding: 0;
+            color: #FFFFFF;
+            border-bottom: 1px solid #29dcbc;
+        }
+        .shuqian_xia3{
+            border: 0;
+        }
+    }
+}
+.fabupinglun{
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 1.28rem;
+    background: #151c2b;
+    a{
+        width: 1.4rem;
+        height: .51rem;
+        display: block;
+        @include center;
+        font-size: 10px;
+        color: #393939;
+        text-align: center;
+        line-height: .51rem;
+        text-decoration: none;
+        background: #FFFFFF;
+        border-radius: 15px;
+        .yuan1{
+            @include yuan(0.07rem);
+            @include tb;
+            left: 0.09rem;
+            background: #c4c4c4;
+        }
+        .yuan2{
+            @include yuan(0.07rem);
+            @include tb;
+            right: 0.09rem;
+            background: #c4c4c4;
+        }
+    }
+}

@@ -3,7 +3,8 @@ html {
   font-size: 100px; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: '苹方'; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -42,17 +43,17 @@ img {
 /*宽高:@include wh($w,$h)*/
 /*调试所用边框：@include border*/
 /*图片居中：@include img-center*/
-* {
+.findlist * {
   outline: none; }
 
-body {
+.findlist body {
   background: #F2F2F2; }
 
-.blankl {
+.findlist .blankl {
   height: 1.4rem;
   width: 100%; }
 
-.headerl {
+.findlist .headerl {
   height: 1.4rem;
   width: 100%;
   background: #2BA6DC;
@@ -60,13 +61,13 @@ body {
   left: 0;
   top: 0; }
 
-.statel {
+.findlist .statel {
   width: 100%;
   height: 0.5rem;
   background-image: url(../img/shujia/9.png);
   background-size: 7.5rem 0.5rem; }
 
-.backl {
+.findlist .backl {
   position: absolute;
   left: 0.25rem;
   top: 0.7rem;
@@ -80,7 +81,7 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
-.soul {
+.findlist .soul {
   position: absolute;
   right: 0.25rem;
   top: 0.7rem;
@@ -94,7 +95,7 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
-.sousuol {
+.findlist .sousuol {
   width: 5.46rem;
   height: 0.54rem;
   border-radius: 0.54rem;
@@ -102,42 +103,42 @@ body {
   left: 1rem;
   top: 0.16rem;
   overflow: hidden; }
-  .sousuol .pic {
+  .findlist .sousuol .pic {
     width: 0.59rem;
     height: 100%;
     background-image: url(../img/shujia/22.png);
     background-size: 0.59rem 0.54rem;
     background-repeat: no-repeat;
     float: left; }
-  .sousuol .inp {
+  .findlist .sousuol .inp {
     float: left;
     line-height: 0.54rem; }
-    .sousuol .inp input {
+    .findlist .sousuol .inp input {
       color: #C4C4C4;
       font-size: 0.2rem;
       border: 0;
       padding-left: 0.12rem; }
 
-.hotl {
+.findlist .hotl {
   height: 6.4rem;
   width: 7rem;
   margin: 0 auto;
   margin-top: 0.3rem; }
-  .hotl .title {
+  .findlist .hotl .title {
     height: 0.84rem;
     background-image: url(../img/shujia/23.png);
     background-size: 2.04rem 0.85rem;
     background-repeat: no-repeat; }
-  .hotl .list {
+  .findlist .hotl .list {
     height: 1.84rem;
     width: 100%;
     background-image: url(../img/shujia/25.png);
     background-size: 7rem 1.84rem;
     background-repeat: no-repeat; }
-  .hotl .list:nth-child(4) {
+  .findlist .hotl .list:nth-child(4) {
     height: 1.76rem; }
 
-.clavierl {
+.findlist .clavierl {
   width: 7.5rem;
   height: 4.28rem;
   position: fixed;
@@ -146,3 +147,8 @@ body {
   background: url(../img/shujia/26.png);
   background-repeat: no-repeat;
   background-size: 7.5rem 4.28rem; }
+
+.findlist a {
+  display: block;
+  width: 100%;
+  height: 100%; }
