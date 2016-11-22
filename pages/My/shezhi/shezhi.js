@@ -39,28 +39,28 @@ app.directive('ngX',[function(){
         template:'<li class="gengxin"><div ng-transclude></div></li>',
         transclude:true,
         link:function($scope,el){
-          $('.tixing').on('touchend',function(){
-			$('.box').addClass('xian');
+          $('.kuang .xiuxi').on('touchend',function(){
+			$('.bbox').addClass('xian-1');
 			$('.kuang').addClass('muohu');
 		})
-		$('.box').on('touchend','.queding',function(){
-			$('.box').removeClass('xian');
+		$('.bbox').on('touchend','.queding',function(){
+			$('.box').removeClass('xian-1');
 			$('.kuang').removeClass('muohu');
 		})
-		$('.box').on('touchend','.quxiao',function(){
-			$('.box').removeClass('xian');
+		$('.bbox').on('touchend','.quxiao',function(){
+			$('.bbox').removeClass('xian-1');
 			$('.kuang').removeClass('muohu');
 		})
-		$('.last').on('touchend',function(){
-			$('.qingchu').addClass('show');
+		$('.kuang .cleras').on('touchend',function(){
+			$('.qingchu').addClass('show-1');
 			$('.kuang').addClass('muohu');
 		})
 		$('.qingchu').on('touchend','.queding',function(){
-			$('.qingchu').removeClass('show');
+			$('.qingchu').removeClass('show-1');
 			$('.kuang').removeClass('muohu');
 		})
 		$('.qingchu').on('touchend','.quxiao',function(){
-			$('.qingchu').removeClass('show');
+			$('.qingchu').removeClass('show-1');
 			$('.kuang').removeClass('muohu');
 		})
       }
