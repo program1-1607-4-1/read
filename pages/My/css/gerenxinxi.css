@@ -174,6 +174,33 @@ a {
         color: #3D3D3D;
         font-size: 0.125rem;
         padding-left: 0.8rem; }
+    .U .L .l-box img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.08rem;
+      margin: auto;
+      transform: scale(0.5); }
+    .U .L .l-box .s-y {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0.1rem;
+      margin: auto;
+      font-size: 0.25rem;
+      color: #3D3D3D;
+      line-height: 0.925rem; }
+      .U .L .l-box .s-y .icon {
+        color: #AEDDF1; }
+    .U .L .l-box .china {
+      color: #3D3D3D;
+      font-size: 0.25rem;
+      padding-left: 0.8rem;
+      padding-top: 0.15rem; }
+    .U .L .l-box .english {
+      color: #3D3D3D;
+      font-size: 0.125rem;
+      padding-left: 0.8rem; }
   .U .last {
     border: 0; }
 
