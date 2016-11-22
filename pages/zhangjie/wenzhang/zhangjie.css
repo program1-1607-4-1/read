@@ -281,33 +281,33 @@ a {
     .jindu .yuan img {
       width: 0.24rem; }
 
-.list {
+.zj-list {
   width: 5.23rem;
   height: 1.31rem;
   margin: 0 auto;
   position: relative; }
-  .list li {
+  .zj-list li {
     position: absolute;
     top: 0.4rem; }
-    .list li img {
+    .zj-list li img {
       width: 0.58rem; }
-    .list li h1 {
+    .zj-list li h1 {
       font-size: 0.23rem;
       font-weight: normal;
       color: #fff;
       text-align: center; }
-  .list .mulu {
+  .zj-list .zj-mulu {
     left: 0;
     width: 0.61rem;
     height: 0.92rem; }
-    .list .mulu a {
+    .zj-list .zj-mulu a {
       display: block;
       width: 100%;
       height: 100%; }
-  .list .shezhi {
+  .zj-list .zj-shezhi {
     left: 50%;
     margin-left: -0.28rem; }
-  .list .liangdu {
+  .zj-list .zj-liangdu {
     right: 0; }
 
 .liangdu-list.liangdu-d {
