@@ -1,0 +1,209 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: '苹方'; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+body {
+  background: #fafafa; }
+
+.shujial .blankl {
+  height: 1.4rem;
+  width: 100%; }
+
+.shujial .headerl {
+  height: 1.4rem;
+  width: 100%;
+  background: #2BA6DC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+
+.shujial .statel {
+  width: 100%;
+  height: 0.5rem;
+  background-image: url(../img/shujia/9.png);
+  background-size: 7.5rem 0.5rem; }
+
+.shujial .titlel {
+  margin: 0 auto;
+  width: 1.5rem;
+  height: 0.7rem;
+  background-image: url(../img/shujia/4.png);
+  background-size: 0.34rem 0.05rem;
+  background-repeat: no-repeat;
+  background-position: 0.55rem 0.34rem; }
+  .shujial .titlel .chnl {
+    font-size: 0.33rem;
+    text-align: center;
+    color: #fff; }
+  .shujial .titlel .engl {
+    font-size: 0.13rem;
+    text-align: center;
+    color: #A3E3FF; }
+
+.shujial .soul {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.7rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  border: 0.01rem solid #0870C0;
+  background: #fff;
+  background-image: url(../img/shujia/3.png);
+  background-size: 0.28rem 0.27rem;
+  background-repeat: no-repeat;
+  background-position: 0.03rem 0.05rem; }
+
+.shujial .bannerl {
+  width: 100%;
+  height: 4.16rem;
+  background-image: url(../img/shujia/2.png);
+  background-size: 7rem 2.84rem;
+  background-position: 0.22rem 0.6rem;
+  background-repeat: no-repeat; }
+  .shujial .bannerl img {
+    position: absolute;
+    width: 6.63rem;
+    height: 3.16rem;
+    display: block;
+    left: 0.42rem;
+    top: 0.42rem; }
+  .shujial .bannerl .turnl {
+    width: 0.6rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    top: 3.7rem; }
+    .shujial .bannerl .turnl li {
+      width: 0.08rem;
+      height: 0.08rem;
+      border-radius: 50%;
+      border: 0.01rem solid #42ABFE;
+      margin-right: 0.12rem;
+      float: left; }
+    .shujial .bannerl .turnl .turnfirl {
+      background: #42ABFE; }
+
+.shujial .newbookl {
+  height: 4.6rem;
+  width: 7rem;
+  margin: 0 auto; }
+  .shujial .newbookl .title {
+    height: 0.7rem;
+    background-image: url(../img/shujia/10.png);
+    background-size: 2.2rem 0.64rem;
+    background-repeat: no-repeat; }
+  .shujial .newbookl .list {
+    margin-top: 0.2rem; }
+    .shujial .newbookl .list .book {
+      width: 33.3%;
+      height: 3.64rem;
+      float: left;
+      background-image: url(../img/shujia/11.png);
+      background-repeat: no-repeat;
+      background-size: 2.2rem 3.13rem; }
+      .shujial .newbookl .list .book img {
+        display: block;
+        width: 1.8rem;
+        left: 0.2rem;
+        top: -0.15rem; }
+
+.shujial .readl {
+  width: 7rem;
+  height: 5.4rem;
+  margin: 0 auto; }
+  .shujial .readl .title {
+    height: 0.74rem;
+    background-image: url(../img/shujia/14.png);
+    background-size: 2.19rem 0.74rem;
+    background-repeat: no-repeat; }
+  .shujial .readl .list {
+    height: 2.35rem;
+    background-image: url(../img/shujia/15.png);
+    background-size: 7rem 2.2rem;
+    background-repeat: no-repeat; }
+    .shujial .readl .list .continue {
+      background-image: url(../img/shujia/16.png);
+      background-size: 1.52rem 0.44rem;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0.1rem;
+      bottom: 0.1rem;
+      width: 1.52rem;
+      height: 0.44rem; }
+
+.shujial .bottoml {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .shujial .bottoml li {
+    float: left; }
+    .shujial .bottoml li a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .shujial .bottoml li:nth-child(1) {
+    width: 33.3%;
+    height: 1rem;
+    background-image: url(../img/shujia/17.png);
+    background-size: 2.51rem 0.99rem;
+    background-repeat: no-repeat; }
+  .shujial .bottoml li:nth-child(2) {
+    width: 33.3%;
+    height: 1rem;
+    background-image: url(../img/shujia/18.png);
+    background-size: 2.5rem 0.99rem;
+    background-repeat: no-repeat; }
+  .shujial .bottoml li:nth-child(3) {
+    width: 33.3%;
+    height: 1rem;
+    background-image: url(../img/shujia/19.png);
+    background-size: 2.49rem 0.99rem;
+    background-repeat: no-repeat; }
+
+.shujial .seall {
+  height: 1rem;
+  width: 100%; }

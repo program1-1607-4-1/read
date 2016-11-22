@@ -1,0 +1,129 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+* {
+  outline: none; }
+
+body {
+  background: #F2F2F2; }
+
+.headerl {
+  height: 1.4rem;
+  width: 100%;
+  background: #2BA6DC; }
+
+.statel {
+  width: 100%;
+  height: 0.5rem;
+  background-image: url(../img/shujia/9.png);
+  background-size: 7.5rem 0.5rem; }
+
+.backl {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.7rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 0.01rem solid #0870C0;
+  background: #fff;
+  background-image: url(../img/shujia/20.png);
+  background-size: 0.1rem 0.17rem;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.soul {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.7rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 0.01rem solid #0870C0;
+  background: #fff;
+  background-image: url(../img/shujia/27.png);
+  background-size: 0.29rem 0.33rem;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sousuol {
+  width: 5.46rem;
+  height: 0.54rem;
+  border-radius: 0.54rem;
+  background: #fff;
+  left: 1rem;
+  top: 0.16rem;
+  overflow: hidden; }
+  .sousuol .pic {
+    width: 0.59rem;
+    height: 100%;
+    background-image: url(../img/shujia/22.png);
+    background-size: 0.59rem 0.54rem;
+    background-repeat: no-repeat;
+    float: left; }
+  .sousuol .inp {
+    float: left;
+    line-height: 0.54rem; }
+    .sousuol .inp input {
+      color: #666666;
+      font-size: 0.2rem;
+      border: 0;
+      padding-left: 0.12rem; }
+
+.listl {
+  width: 100%;
+  height: 3.88rem;
+  background-image: url(../img/shujia/28.png);
+  background-size: 7.5rem 3.88rem;
+  background-repeat: no-repeat; }
+
+.clavierl {
+  width: 7.5rem;
+  height: 4.28rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: url(../img/shujia/26.png);
+  background-repeat: no-repeat;
+  background-size: 7.5rem 4.28rem; }
