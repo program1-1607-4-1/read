@@ -25,7 +25,7 @@
 	</div>
 	<div class="foot-shucheng">
 		<div class="foot-lis">
-			<a href="#/shujial">
+			<a href="#/">
 				<i></i>
 				<span>书架</span>
 			</a>
@@ -37,17 +37,19 @@
 			</a>
 		</div>
 		<div class="foot-lis">
-			<a href="#/gerenxixin">
+			<a href="#/gerenxinxi">
 				<i></i>
 				<span>我的</span>
 			</a>
 		</div>
 	</div>
 	<div class="banner">
-		<div class="banner-pic">
-			<h1>产品设计构思与表达</h1>
-			<div></div>
-			<p><span>Product</span> design conception and expression.</p>
+		<div class="chang">
+			<div class="banner-pic">
+				<h1>产品设计构思与表达</h1>
+				<div></div>
+				<p><span>Product</span> design conception and expression.</p>
+			</div>
 		</div>
 		<div class="dian">
 			<div class="dian-lis"></div>
@@ -62,49 +64,13 @@
 			<div class="tubiao"></div>
 		</div>
 		<ul class="book-1">
-			<li class="book-lis">
+			<li class="book-lis" ng-repeat="v in nBookL track by $index">
 				<a href="">
 					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
-				</a>
-			</li>
-			<li class="book-lis">
-				<a href="">
-					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
-				</a>
-			</li>
-			<li class="book-lis">
-				<a href="">
-					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
-				</a>
-			</li>
-			<li class="book-lis">
-				<a href="">
-					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
-				</a>
-			</li>
-			<li class="book-lis">
-				<a href="">
-					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
-				</a>
-			</li>
-			<li class="book-lis">
-				<a href="">
-					<div class="imgs"></div>
-				    <span>地狱（电影《但丁 密码》原著...</span>
-				    <p>（美）丹·布朗</p>
+				    <span>{{v.name}}</span>
+				    <p>{{v.author}}</p>
 				</a>
 			</li>
 		</ul>
 	</div>
-
 </div>

@@ -46,7 +46,11 @@ img {
 .jingxuan .top {
   height: 1rem;
   width: 100%;
-  background: #29a6dc; }
+  background: #29a6dc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20; }
   .jingxuan .top .circle1 {
     width: 0.44rem;
     height: 0.44rem;
@@ -230,53 +234,57 @@ img {
 .jingxuan .banner {
   width: 100%;
   height: 4.83rem;
-  position: relative; }
-  .jingxuan .banner .banner-pic {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(../img/shucheng/banner.jpg);
-    background-size: cover; }
-    .jingxuan .banner .banner-pic h1 {
-      height: 0.4rem;
-      margin-top: 1rem;
-      margin-left: 0.9rem;
-      font-size: 0.36rem;
-      color: #1b1c1e; }
-    .jingxuan .banner .banner-pic div {
-      width: 1.8rem;
-      height: 1px;
-      margin-left: 0.9rem;
-      background: #a1a6bb;
-      margin-top: 0.3rem; }
-    .jingxuan .banner .banner-pic p {
-      height: 0.3rem;
-      margin-left: 0.9rem;
-      color: #585b62;
-      font-size: 0.24px;
-      margin-top: 0.2rem;
-      font-weight: 500; }
-      .jingxuan .banner .banner-pic p span {
-        font-weight: 600;
-        color: #818593; }
-  .jingxuan .banner .dian {
-    position: absolute;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -0.15rem;
-    width: 0.45rem;
-    height: 0.08rem; }
-    .jingxuan .banner .dian .dian-lis {
-      width: 0.08rem;
-      height: 0.08rem;
-      border-radius: 50%;
-      border: 1px solid #0090FF;
-      float: left;
-      margin-right: 0.06rem; }
-    .jingxuan .banner .dian .dian-lis:nth-child(1) {
-      background: #0090FF; }
+  position: relative;
+  margin-top: 1rem;
+  overflow: hidden; }
+  .jingxuan .banner .chang {
+    height: 100%; }
+    .jingxuan .banner .chang .banner-pic {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url(../img/shucheng/banner.jpg);
+      background-size: cover; }
+      .jingxuan .banner .chang .banner-pic h1 {
+        height: 0.4rem;
+        margin-top: 1rem;
+        margin-left: 0.9rem;
+        font-size: 0.36rem;
+        color: #1b1c1e; }
+      .jingxuan .banner .chang .banner-pic div {
+        width: 1.8rem;
+        height: 1px;
+        margin-left: 0.9rem;
+        background: #a1a6bb;
+        margin-top: 0.3rem; }
+      .jingxuan .banner .chang .banner-pic p {
+        height: 0.3rem;
+        margin-left: 0.9rem;
+        color: #585b62;
+        font-size: 0.24px;
+        margin-top: 0.2rem;
+        font-weight: 500; }
+        .jingxuan .banner .chang .banner-pic p span {
+          font-weight: 600;
+          color: #818593; }
+    .jingxuan .banner .chang .dian {
+      position: absolute;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -0.15rem;
+      width: 0.45rem;
+      height: 0.08rem; }
+      .jingxuan .banner .chang .dian .dian-lis {
+        width: 0.08rem;
+        height: 0.08rem;
+        border-radius: 50%;
+        border: 1px solid #0090FF;
+        float: left;
+        margin-right: 0.06rem; }
+      .jingxuan .banner .chang .dian .dian-lis:nth-child(1) {
+        background: #0090FF; }
 
 .jingxuan .newjia {
   width: 7rem;
