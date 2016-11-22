@@ -1,4 +1,5 @@
-@import"base";
+@import"../../../../../base";
+.finddata{
 *{
     outline:none;
 }
@@ -93,3 +94,9 @@ body{
         background-size:7.5rem 4.28rem;
         
     }
+    a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+}
