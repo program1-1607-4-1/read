@@ -44,13 +44,13 @@ app.config(["$routeProvider",function($routeProvider){
     }).when("/",{
         templateUrl:"pages/bookshelf/shujia/shujia.html",
         controller:"shujiaCtrl"
-    })..when("/findlist",{
+    }).when("/findlist",{
             templateUrl:"pages/bookshelf/findList/findList.html",
             controller:"findlistCtrl"
-        })..when("/finddata",{
+        }).when("/finddata",{
             templateUrl:"pages/bookshelf/findData/findData.html",
             controller:"finddataCtrl"
-        })..when("/filterl",{
+        }).when("/filterl",{
             templateUrl:"pages/bookshelf/filterl/filterl.html",
             controller:"filterlCtrl"
         }).when("/shuye1",{
