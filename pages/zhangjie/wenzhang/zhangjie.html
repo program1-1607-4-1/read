@@ -42,7 +42,7 @@
 						<img src="img/zhangjie/yue.png" alt="" />
 					</div>
 					<!--底部-->
-					<div class="foot">
+					<div class="zj-foot">
 						<div class='zhangjie'>
 							<div class='shang'>上一章</div>
 							<div class='jindu'>
@@ -136,12 +136,12 @@
 						<!--背景-->
 						<div class='bg'>
 							<div class='shang'>背景</div>
-							<ul class='bg-tu'>
-								<li>
-									<div class='bg-color bg-one'></div>
-									<div class='bg-wenzi'>纯色羊皮</div>
+							<ul class='bg-tu' b-g>
+								<li ng-repeat='v in shuzu'>
+									<div class='bg-color {{v.color}}'></div>
+									<div class='bg-wenzi'>{{v.wenzi}}</div>
 								</li>
-								<li>
+								<!--<li>
 									<div class='bg-color bg-two'></div>
 									<div class='bg-wenzi'>经典一</div>
 								</li>
@@ -168,7 +168,7 @@
 								<li>
 									<div class='bg-color bg-eight'>+</div>
 									<div class='bg-wenzi'>自定义</div>
-								</li>
+								</li>-->
 							</ul>
 						</div>
 					</div>
@@ -225,7 +225,6 @@
 						<sapn class='yejiao-left'>本章进度0%</sapn>
 						<span class='yejiao-right'>1/468</span>
 					</div>
-					
 				</div>
 			</div>
 			<!--复制--> 
