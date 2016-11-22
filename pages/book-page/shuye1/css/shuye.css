@@ -61,7 +61,7 @@ html, body {
   -webkit-text-size-adjust: none;
 }
 
-.box {
+.box_shuye1 {
   width: 100%;
   height: 100%;
 }
@@ -100,7 +100,20 @@ a {
   background-position: 2px center;
 }
 
-.head .head_zhong {
+.head .head_Left .shuye_fanhui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+}
+
+.head .head_zhong1 {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,19 +125,19 @@ a {
   color: #fffefe;
 }
 
-.head .head_zhong h1 {
+.head .head_zhong1 h1 {
   font-size: 20px;
   font-weight: 300;
   margin-top: .19rem;
   margin-bottom: .1rem;
 }
 
-.head .head_zhong span {
+.head .head_zhong1 span {
   font-size: 7px;
   color: #a3e3ff;
 }
 
-.head .head_zhong .head_img {
+.head .head_zhong1 .head_img {
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +147,7 @@ a {
   top: .2rem;
 }
 
-.head .head_zhong .head_img .head_gan {
+.head .head_zhong1 .head_img .head_gan {
   height: 1px;
   width: .29rem;
   background: #FFFFFF;
@@ -146,7 +159,7 @@ a {
   margin: auto;
 }
 
-.head .head_zhong .head_img .head_gan .head_yuan1 {
+.head .head_zhong1 .head_img .head_gan .head_yuan1 {
   position: absolute;
   left: -0.03rem;
   top: -0.01rem;
@@ -156,7 +169,7 @@ a {
   border-radius: 50%;
 }
 
-.head .head_zhong .head_img .head_gan .head_yuan2 {
+.head .head_zhong1 .head_img .head_gan .head_yuan2 {
   position: absolute;
   right: -0.03rem;
   top: -0.01rem;
@@ -316,6 +329,18 @@ a {
   text-align: center;
 }
 
+.box_body .body_nei .body_nei_bottom .book_mulu .mulunei .shuye_mulu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+}
+
 .box_body .body_nei .body_nei_bottom .book_shujia {
   width: 2.6rem;
   height: .69rem;
@@ -354,6 +379,18 @@ a {
   bottom: 0;
   margin: auto;
   text-align: center;
+}
+
+.box_body .body_nei .body_nei_bottom .book_shujia .shujianei .shuye_shujia {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
 }
 
 .box_body .body_nei .body_nei_bottom .lijiyudu {
@@ -401,6 +438,18 @@ a {
   margin: auto;
   right: .32rem;
   border-radius: 50%;
+}
+
+.box_body .body_nei .body_nei_bottom .lijiyudu .lijiyudu_nei .lijiyudu_zi .shuye_yuedu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
 }
 
 .box_shuping {
@@ -626,7 +675,16 @@ a {
   right: 0.26rem;
 }
 
-.box_shuping .shuping_nei .shuping_move .shuping_move_nei a {
+.box_shuping .shuping_nei .shuping_move .shuping_move_nei .shuye_chakanquanbu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
   color: #fff;
 }
 

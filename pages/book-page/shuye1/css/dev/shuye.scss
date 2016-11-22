@@ -3,7 +3,7 @@ $color:#29a6dc;
 html,body{
     -webkit-text-size-adjust:none;
 }
-.box{
+.box_shuye1{
     width: 100%;
     height: 100%;
 //  @include center;
@@ -36,8 +36,15 @@ a{
             background-size:.28rem .28rem;
             background-position: 2px center;
         }
+        .shuye_fanhui{
+            width: 100%;
+            height: 100%;
+            @include center;
+            z-index: 100;
+        }
     }
-    .head_zhong{
+    .head_zhong1{
+        display: none;
         @include center;
         text-align: center;
         line-height: .3rem;
@@ -216,6 +223,12 @@ a{
                         @include tb;
                         text-align: center;
                     }
+                    .shuye_mulu{
+                        width: 100%;
+                        height: 100%;
+                        @include center;
+                        z-index: 100;
+                    }
                 }
             }
             .book_shujia{
@@ -247,6 +260,12 @@ a{
                         line-height: .51rem;
                         @include tb;
                         text-align: center;
+                    }
+                    .shuye_shujia{
+                        width: 100%;
+                        height: 100%;
+                        @include center;
+                        z-index: 100;
                     }
                 }
             }
@@ -284,6 +303,12 @@ a{
                             @include tb;
                             right: .32rem;
                             border-radius: 50%;
+                        }
+                        .shuye_yuedu{
+                            width: 100%;
+                            height: 100%;
+                            @include center;
+                            z-index: 100;
                         }
                     }
                 }
@@ -475,8 +500,11 @@ a{
                     background: #fff;
                     right: 0.26rem;
                 }
-                a{
-                    
+                .shuye_chakanquanbu{
+                    width: 100%;
+                    height: 100%;
+                    @include center;
+                    z-index: 100;
                     color: #fff;
                 }
             }
