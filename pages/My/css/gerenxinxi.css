@@ -211,22 +211,28 @@ a {
   left: 0;
   bottom: 0;
   background: #151C2B; }
-  .foot .LL {
+  .foot a {
+    display: block;
     width: 33.3%;
     height: 100%;
-    border: 0;
-    border-right: 1px solid #515357;
-    color: #626366;
-    font-size: 0.25rem;
     float: left;
-    text-align: center;
-    padding-top: 0.08rem;
-    cursor: pointer; }
-    .foot .LL .icon {
-      font-size: 0.5rem; }
-  .foot .last {
-    border: 0;
-    color: #F3F3F5; }
+    z-index: 333; }
+    .foot a .LL {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-right: 1px solid #515357;
+      color: #626366;
+      font-size: 0.25rem;
+      float: left;
+      text-align: center;
+      padding-top: 0.08rem;
+      cursor: pointer; }
+      .foot a .LL .icon {
+        font-size: 0.5rem; }
+    .foot a .last {
+      border: 0;
+      color: #F3F3F5; }
 
 .box {
   width: 100%;
