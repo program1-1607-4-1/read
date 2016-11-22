@@ -13,14 +13,16 @@
 	</head>
 
 	<body ng-controller='zhangjieCtrl'>-->
-		<div class='zhangjie-box' dian-ji>
+		
+		<div id='zhangjie-box' class='zj-box'>
+			
 			<div class='zhengwen3'>
-				<div class='fix'>
+				<!--<div class='fix'>-->
 					<div class="header">
 						<div class="return">
-							<a href="">
-								<img src="img/zhangjie/fanhui.png" alt="" />
-							</a>
+							
+							<img src="img/zhangjie/fanhui.png" alt="" />
+							<a href="#/shuye1"></a>
 						</div>
 						<div class="shuqian">
 							<img src="img/zhangjie/shuqian.png" alt="" />
@@ -43,40 +45,40 @@
 					</div>
 					<!--底部-->
 					<div class="zj-foot">
-						<div class='zhangjie'>
-							<div class='shang'>上一章</div>
-							<div class='jindu'>
-								<div class='zong'>
-									<img src="" alt="" />
+						<div class='zj-footer zj-footer-d'>
+							<div class='zhangjie'>
+								<div class='zj-shang'>上一章</div>
+								<div class='jindu'>
+									<div class='zong'>
+										<img src="" alt="" />
+									</div>
+									<div class='yuan'>
+										<img src="img/zhangjie/yuan.png" alt="" />
+									</div>
 								</div>
-								<div class='yuan'>
-									<img src="img/zhangjie/yuan.png" alt="" />
-								</div>
+								<div class='zj-xia'>下一章</div>
 							</div>
-							<div class='xia'>下一章</div>
+							<ul class="zj-list">
+								<li class='zj-mulu'>
+										<a href="#/mulu" class='zj-a' ></a>
+										<img src="img/zhangjie/mulu.png" alt="" />
+										<h1>目录</h1>
+										
+								</li>
+								<li class='zj-shezhi' ng-click='nessAdd()'>
+									<img src="img/zhangjie/shezhi.png" alt="" />
+									<h1>设置</h1>
+								</li>
+								<li class='zj-liangdu' ng-click='setAdd()'>
+									<img src="img/zhangjie/liangdu.png" alt="" />
+									<h1>亮度</h1>
+								</li>
+							</ul>
 						</div>
-						<ul class="zj-list">
-							<li class='zj-mulu'>
-								<a href="#/mulu">
-									<img src="img/zhangjie/mulu.png" alt="" />
-									<h1>目录</h1>
-								</a>
-							</li>
-							<li class='zj-shezhi' she-zhi>
-								<img src="img/zhangjie/shezhi.png" alt="" />
-								<h1>设置</h1>
-							</li>
-							<li class='zj-liangdu' liang-du>
-								<img src="img/zhangjie/liangdu.png" alt="" />
-								<h1>亮度</h1>
-							</li>
-						</ul>
-					</div>
-
-					<!--亮度-->
-					<div class='liangdu-list'>
-						<div class='zhangjie'>
-							<div class='shang an'>暗</div>
+						<!--亮度-->
+					<div id='liangdu-list'>
+						<div class='zj-zhangjie'>
+							<div class='zj-an'>暗</div>
 							<div class='jindu liangdu-jindu'>
 								<div class='zong'>
 									<img src="" alt="" />
@@ -85,17 +87,17 @@
 									<img src="img/zhangjie/yuan.png" alt="" />
 								</div>
 							</div>
-							<div class='xia liang'>亮</div>
+							<div class='zj-xia zj-liang'>亮</div>
 							<div class='style'>系统</div>
 						</div>
-						<div class='moshi'>
-							<div class='huyan'>
+						<div class='zj-moshi'>
+							<div class='zj-huyan'>
 								<img src="img/zhangjie/baiyuan.png" alt="" />
-								<span>护眼模式</span>
+								<span class='zj-span'>护眼模式</span>
 							</div>
-							<div class='pingmu'>
+							<div class='zj-pingmu'>
 								<img src="img/zhangjie/huangyuan.png" alt="" />
-								<span>屏幕亮度</span>
+								<span class='zj-span'>屏幕亮度</span>
 							</div>
 						</div>
 					</div>
@@ -103,7 +105,7 @@
 					<div class='shezhi-list'>
 						<!--字号-->
 						<div class='zhangjie zihao'>
-							<div class='shang'>字号</div>
+							<div class='zj-shang'>字号</div>
 							<div class='zihao-one'>
 								<img src="img/zhangjie/ziti.png" alt="" />
 							</div>
@@ -115,11 +117,11 @@
 									<img src="img/zhangjie/yuan.png" alt="" />
 								</div>
 							</div>
-							<div class='xia shuzi'>20</div>
+							<div class='zj-xia shuzi'>20</div>
 						</div>
 						<!--行距-->
 						<div class='zhangjie zihao'>
-							<div class='shang'>行距</div>
+							<div class='zj-shang'>行距</div>
 							<div class='zihao-one'>
 								<img src="img/zhangjie/hangju.png" alt="" />
 							</div>
@@ -128,54 +130,29 @@
 									<img src="" alt="" />
 								</div>
 								<div class='yuan'>
-									<img src="img/zhangjie/yuan.png" alt="" />
+									<img src="img/zhangjie/yuan.png" alt=""/>
 								</div>
 							</div>
-							<div class='xia shuzi'>06</div>
+							<div class='zj-xia shuzi'>06</div>
 						</div>
 						<!--背景-->
 						<div class='bg'>
 							<div class='shang'>背景</div>
-							<ul class='bg-tu' b-g>
-								<li ng-repeat='v in shuzu'>
-									<div class='bg-color {{v.color}}'></div>
+							<ul class='bg-tu'>
+								<li ng-repeat='v in shuzu' ng-click='colAdd($index)'>
+									<div class='bg-color {{v.color}}'>{{v.more}}</div>
 									<div class='bg-wenzi'>{{v.wenzi}}</div>
 								</li>
-								<!--<li>
-									<div class='bg-color bg-two'></div>
-									<div class='bg-wenzi'>经典一</div>
-								</li>
-								<li>
-									<div class='bg-color bg-three'></div>
-									<div class='bg-wenzi'>经典二</div>
-								</li>
-								<li>
-									<div class='bg-color bg-four'></div>
-									<div class='bg-wenzi'>蓝色图腾</div>
-								</li>
-								<li>
-									<div class='bg-color bg-five'></div>
-									<div class='bg-wenzi'>美丽星空</div>
-								</li>
-								<li>
-									<div class='bg-color bg-six'></div>
-									<div class='bg-wenzi'>少女情怀</div>
-								</li>
-								<li>
-									<div class='bg-color bg-seven'></div>
-									<div class='bg-wenzi'>养眼绿色</div>
-								</li>
-								<li>
-									<div class='bg-color bg-eight'>+</div>
-									<div class='bg-wenzi'>自定义</div>
-								</li>-->
 							</ul>
 						</div>
 					</div>
-				</div>
+
+					
+					</div>
+				<!--</div>-->
 			</div>
-			<div class="content">
-				<div class="title">
+			<div class="content" ng-click='textAdd()'>
+				<div class="title title-d">
 					<div class="pre-xian"></div>
 					<div class='title-wz'>最强小农民</div>
 					<div class="last-xian"></div>
