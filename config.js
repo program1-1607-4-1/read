@@ -45,17 +45,17 @@ app.config(["$routeProvider",function($routeProvider){
         templateUrl:"pages/bookshelf/shujia/shujia.html",
         controller:"shujiaCtrl"
     }).when("/findlist",{
-            templateUrl:"pages/bookshelf/findList/findList.html",
-            controller:"findlistCtrl"
-        }).when("/finddata",{
-            templateUrl:"pages/bookshelf/findData/findData.html",
-            controller:"finddataCtrl"
-        }).when("/filterl",{
-            templateUrl:"pages/bookshelf/filterl/filterl.html",
-            controller:"filterlCtrl"
-        }).when("/shuye1",{
-        templateUrl:"pages/book-page/shuye1/shuye.html",
-        controller:"shuye1Ctrl"
+        templateUrl:"pages/bookshelf/findList/findList.html",
+        controller:"findlistCtrl"
+    }).when("/finddata",{
+        templateUrl:"pages/bookshelf/findData/findData.html",
+        controller:"finddataCtrl"
+    }).when("/filterl",{
+        templateUrl:"pages/bookshelf/filterl/filterl.html",
+        controller:"filterlCtrl"
+    }).when("/shuye1",{
+	    templateUrl:"pages/book-page/shuye1/shuye.html",
+	    controller:"shuye1Ctrl"
     }).when('/shuye1/shuye3',{
         templateUrl:"pages/book-page/shuye3/shuye.html",
         controller:"shuye3Ctrl"

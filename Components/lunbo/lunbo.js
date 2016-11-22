@@ -6,7 +6,7 @@ app.controller('lunboCtrl',['$scope',function($scope){
     ]
 }]);
 app.directive('lunbo',[function(){
-    return {/
+    return {
         restrict:"E",
         replace:true,
         templateUrl:'Components/lunbo/lunbo.html',
@@ -15,17 +15,16 @@ app.directive('lunbo',[function(){
             time:'='
         },
         link:function($scope,el){
-        	var t1=$(".jingxuan .banner").width()
-        	console.log(t1)
-            var t=-500;
+        	var n=0;
+        	var next=0;
             setInterval(function(){
-                $('.box_nei').css("transform","translate3d("+t+"px,0,0)");
-                t-=500;
-                if(t===-){
-                    t=0;
-                }
+              next=n+1;
+              if(next>=3){
+					next=0;
+				}
+                $('.banner-pic').eq(n).animate({opacity:0},600).end().eq(next).animate({opacity:1},600)
+			  n=next;
             },$scope.time)
-
             console.log(el)
         }
     }

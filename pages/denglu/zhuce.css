@@ -6,278 +6,204 @@
   text-decoration: none;
   border: 0;
   font-style: normal;
-  color: #777779;
   position: relative;
-  font-family: "微软雅黑";
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 img {
   vertical-align: middle;
-  border: 0;
-}
+  border: 0; }
 
 html {
-  font-size: 100px;
-}
+  font-size: 100px; }
 
 body {
   font-size: 15px;
-  background: #000;
-}
+  background: #000; }
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: 42.66667px;
-  }
-}
+    font-size: 42.66667px; } }
 
 @media screen and (min-width: 360px) {
   html {
-    font-size: 48px;
-  }
-}
+    font-size: 48px; } }
 
 @media screen and (min-width: 375px) {
   html {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 @media screen and (min-width: 384px) {
   html {
-    font-size: 51.2px;
-  }
-}
+    font-size: 51.2px; } }
 
 @media screen and (min-width: 412px) {
   html {
-    font-size: 54.93333px;
-  }
-}
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
-    font-size: 55.2px;
-  }
-}
+    font-size: 55.2px; } }
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 80px;
-  }
-}
+    font-size: 80px; } }
 
 @media screen and (min-width: 640px) {
   html {
-    font-size: 85.33333px;
-  }
-}
+    font-size: 85.33333px; } }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 102.4px;
-  }
-}
+    font-size: 102.4px; } }
 
 @media screen and (min-width: 800px) {
   html {
-    font-size: 106.66667px;
-  }
-}
+    font-size: 106.66667px; } }
 
 @media screen and (min-width: 1280px) {
   html {
-    font-size: 170.66667px;
-  }
-}
+    font-size: 170.66667px; } }
 
 @media screen and (min-width: 1600px) {
   html {
-    font-size: 213.33333px;
-  }
-}
+    font-size: 213.33333px; } }
 
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 192px;
-  }
-}
+    font-size: 192px; } }
 
 input {
   background: transparent;
-  outline: medium;
-}
+  outline: medium; }
 
 .clear {
-  clear: both;
-}
+  clear: both; }
 
 body {
   background: #F2F2F2;
-  font-family: "苹方";
-}
+  font-family: "苹方"; }
 
 img {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .top-zhuce {
   padding: 0.3rem;
   height: 2.6rem;
   width: auto;
   background: #2BA6DC;
-  position: relative;
-}
-
-.top-zhuce .hui {
-  display: block;
-  height: 0.4rem;
-  line-height: 0.4rem;
-  width: 0.4rem;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  top: 0.3rem;
-  left: 0.3rem;
-  color: #fff;
-  text-align: center;
-  font-family: '苹方';
-  z-index: 100;
-}
-
-.top-zhuce .hui img {
-  position: absolute;
-  top: 0rem;
-  bottom: 0;
-  left: 0.07rem;
-  transform: scale(0.5);
-}
-
-.top-zhuce .shang {
-  font-size: 0.36rem;
-  color: #fff;
-  text-align: center;
-  font-family: '苹方';
-}
-
-.top-zhuce .xia {
-  font-size: 0.42rem;
-  color: #fff;
-  text-align: center;
-  font-family: '苹方';
-  margin-top: 0.9rem;
-}
+  position: relative; }
+  .top-zhuce .hui {
+    display: block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    color: #fff;
+    text-align: center;
+    font-family: '苹方';
+    z-index: 100; }
+    .top-zhuce .hui img {
+      position: absolute;
+      top: 0rem;
+      bottom: 0;
+      left: 0.07rem;
+      transform: scale(0.5); }
+  .top-zhuce .shang {
+    font-size: 0.36rem;
+    color: #fff;
+    text-align: center;
+    font-family: '苹方'; }
+  .top-zhuce .xia {
+    font-size: 0.42rem;
+    color: #fff;
+    text-align: center;
+    font-family: '苹方';
+    margin-top: 0.9rem; }
 
 .zhuce-body {
   width: 100%;
-  height: 100%;
-}
-
-.zhuce-body ul {
-  padding: 0.6rem  0 0 0;
-}
-
-.zhuce-body ul li {
-  position: relative;
-  margin: auto;
-  margin-bottom: 0.4rem;
-  padding: 0.2rem 1.3rem;
-  width: 6.15rem;
-  height: 0.9rem;
-  border-radius: 0.9rem;
-  border: 0.01rem solid #2BA6DC;
-  background: #fff;
-}
-
-.zhuce-body ul li img {
-  position: absolute;
-  top: 0.00rem;
-  left: 0.25rem;
-  transform: scale(0.5);
-}
-
-.zhuce-body ul li input {
-  color: #ADADAD;
-  font-size: 0.28rem;
-  height: 100%;
-}
+  height: 100%; }
+  .zhuce-body ul {
+    padding: 0.6rem  0 0 0; }
+    .zhuce-body ul li {
+      position: relative;
+      margin: auto;
+      margin-bottom: 0.4rem;
+      padding: 0.2rem 1.3rem;
+      width: 6.15rem;
+      height: 0.9rem;
+      border-radius: 0.9rem;
+      border: 0.01rem solid #2BA6DC;
+      background: #fff; }
+      .zhuce-body ul li img {
+        position: absolute;
+        top: 0.00rem;
+        left: 0.25rem;
+        transform: scale(0.5); }
+      .zhuce-body ul li input {
+        color: #ADADAD;
+        font-size: 0.28rem;
+        height: 100%; }
 
 .yanz {
   margin: 0 auto;
   width: 6.15rem;
-  height: 0.9rem;
-}
-
-.yanz .left {
-  margin: auto;
-  margin-bottom: 0.4rem;
-  padding: 0.2rem 1.3rem;
-  width: 3.85rem;
-  height: 0.9rem;
-  border-radius: 0.9rem;
-  border: 0.01rem solid #2BA6DC;
-  padding: 0;
-  float: left;
-  text-align: center;
-}
-
-.yanz .left input {
-  width: 100%;
-  height: 0.5rem;
-  font-size: 0.28rem;
-  line-height: 0.7rem;
-  text-align: center;
-  color: #5ECBFD;
-}
-
-.yanz .left span {
-  color: #D9D9D9;
-  font-size: 0.24rem;
-}
-
-.yanz .right {
-  margin: auto;
-  margin-bottom: 0.4rem;
-  padding: 0.2rem 1.3rem;
-  width: 2.05rem;
-  height: 0.9rem;
-  border-radius: 0.9rem;
-  border: 0.01rem solid #2BA6DC;
-  padding: 0;
-  float: right;
-}
-
-.yanz .right input {
-  width: 100%;
-  font-size: 0.28rem;
-  line-height: 0.9rem;
-  text-align: center;
-  color: #ADADAD;
-}
+  height: 0.9rem; }
+  .yanz .left {
+    margin: auto;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 1.3rem;
+    width: 3.85rem;
+    height: 0.9rem;
+    border-radius: 0.9rem;
+    border: 0.01rem solid #2BA6DC;
+    padding: 0;
+    float: left;
+    text-align: center; }
+    .yanz .left input {
+      width: 100%;
+      height: 0.5rem;
+      font-size: 0.28rem;
+      line-height: 0.7rem;
+      text-align: center;
+      color: #5ECBFD; }
+    .yanz .left span {
+      color: #D9D9D9;
+      font-size: 0.24rem; }
+  .yanz .right {
+    margin: auto;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 1.3rem;
+    width: 2.05rem;
+    height: 0.9rem;
+    border-radius: 0.9rem;
+    border: 0.01rem solid #2BA6DC;
+    padding: 0;
+    float: right; }
+    .yanz .right input {
+      width: 100%;
+      font-size: 0.28rem;
+      line-height: 0.9rem;
+      text-align: center;
+      color: #ADADAD; }
 
 .dengl {
   width: 5.2rem;
   overflow: hidden;
   margin: auto;
-  font-size: 0.22rem;
-}
-
-.dengl a {
-  color: #A0A0A0;
-}
-
-.dengl img {
-  margin-right: 0.2rem;
-}
-
-.dengl .left {
-  float: left;
-}
-
-.dengl .right {
-  float: right;
-}
+  font-size: 0.22rem; }
+  .dengl a {
+    color: #A0A0A0; }
+  .dengl img {
+    margin-right: 0.2rem; }
+  .dengl .left {
+    float: left; }
+  .dengl .right {
+    float: right; }
 
 .an {
   height: 0.7rem;
@@ -288,57 +214,37 @@ img {
   text-align: center;
   line-height: 0.7rem;
   font-size: 0.28rem;
-  position: relative;
-}
-
-.an a {
-  z-index: 100;
-}
-
-.an a span {
-  color: #fff;
-}
-
-.an em {
-  position: absolute;
-  background: #fff;
-  width: 0.05rem;
-  height: 0.05rem;
-  border-radius: 50%;
-  top: 0.3rem;
-}
-
-.an .left {
-  left: 0.32rem;
-}
-
-.an .right {
-  right: 0.32rem;
-}
+  position: relative; }
+  .an a {
+    z-index: 100; }
+    .an a span {
+      color: #fff; }
+  .an em {
+    position: absolute;
+    background: #fff;
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 50%;
+    top: 0.3rem; }
+  .an .left {
+    left: 0.32rem; }
+  .an .right {
+    right: 0.32rem; }
 
 .zhmm {
-  height: 3.1rem;
-}
+  height: 3.1rem; }
 
 .hua {
   height: 1.85rem;
   padding: 1.1rem 0.65rem 0 0.75rem;
-  font-size: 0.24rem;
-}
-
-.hua span {
-  color: #0C1B6C;
-}
-
-.hua div span {
-  float: right;
-  padding: 0.15rem 0;
-}
+  font-size: 0.24rem; }
+  .hua span {
+    color: #0C1B6C; }
+  .hua div span {
+    float: right;
+    padding: 0.15rem 0; }
 
 .xgmm {
-  height: 4.45rem;
-}
-
-.xgmm .xia {
-  margin-top: 1.5rem;
-}
+  height: 4.45rem; }
+  .xgmm .xia {
+    margin-top: 1.5rem; }
