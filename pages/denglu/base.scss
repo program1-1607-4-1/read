@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    font-style: normal;
+    color:#777779;
+    position: relative;
+    font-family:"微软雅黑";
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+$d-list: 320px, 360px, 375px, 384px, 412px, 414px, 600px, 640px, 768px, 800px, 1280px, 1600px, 1440px;
+$design-size: 750px;
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 15px;
+    background: #000;
+}
+@each $w in $d-list{
+    @media screen and (min-width: #{$w}){
+        html{
+            font-size: 100px * $w /$design-size;
+        }
+    }
+}
+@mixin left-right{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin top-bottom{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin center{
+    @include left-right;
+    @include top-bottom;
+}
+input{
+    background: transparent;
+    outline: medium;
+}
+@mixin left-right{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin top-bottom{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin center{
+    @include left-right;
+    @include top-bottom;
+}
+@mixin square($w,$h){
+    width:$w;
+    height:$h;
+}
+@mixin bg($bg-color){
+    background:$bg-color;
+}
+.clear{
+    clear: both;
+}

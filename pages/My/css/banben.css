@@ -1,0 +1,123 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+/*上下居中:@include tb*/
+/*左右居中: @include lr*/
+/*居中:@include center*/
+/*圆:@include yuan*/
+/*宽高:@include wh($w,$h)*/
+/*调试所用边框：@include border*/
+/*图片居中：@include img-center*/
+img {
+  vertical-align: middle; }
+
+body {
+  background: #FAFAFA; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.icon {
+  font-family: "iconfont" !important; }
+
+.head {
+  width: 100%;
+  height: 1.1rem;
+  background: #2BA6DC;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.2rem;
+  text-align: center; }
+  .head .z {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.5rem;
+    margin: auto;
+    z-index: 33; }
+  .head .shezhi {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .head .china {
+    font-size: 0.36rem;
+    color: #fff; }
+  .head .english {
+    font-size: 0.18rem;
+    color: #fff;
+    margin-top: 0.05rem; }
+
+.xian {
+  width: 98%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #D5D5D5;
+  border-radius: 2px;
+  margin-top: 0.2rem; }
+
+.text {
+  width: 7.1rem;
+  height: 5.7rem;
+  border: 2px solid #EBEBEB;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0.24rem;
+  border-radius: 5px;
+  background: #fff; }
+  .text .china {
+    color: #3D3D3D;
+    font-size: 0.25rem;
+    text-align: center;
+    padding-top: 0.15rem; }
+  .text .english {
+    color: #8E8E8E;
+    font-size: 0.125rem;
+    text-align: center; }
+  .text pre {
+    margin-top: 0.2rem;
+    color: #8E8E8E;
+    font-size: 0.2rem;
+    line-height: 1.5; }
