@@ -46,6 +46,30 @@ a {
 /*宽高:@include wh($w,$h)*/
 /*调试所用边框：@include border*/
 /*图片居中：@include img-center*/
+#zhangjie-box.bg-one {
+  background: #FCF3DB; }
+
+#zhangjie-box.bg-two {
+  background: #FFE9B0; }
+
+#zhangjie-box.bg-three {
+  background: #D8A764; }
+
+#zhangjie-box.bg-four {
+  background: #3876AC; }
+
+#zhangjie-box.bg-five {
+  background: #21858E; }
+
+#zhangjie-box.bg-six {
+  background: #F4C5D4; }
+
+#zhangjie-box.bg-seven {
+  background: #79D143; }
+
+#zhangjie-box.bg-eight {
+  background: #fff; }
+
 #zhangjie-box {
   width: 100%;
   height: 100%;
@@ -56,22 +80,6 @@ a {
   left: 0;
   right: 0;
   left: 0; }
-  #zhangjie-box .zhangjie-box.bg-one {
-    background: #FCF3DB; }
-  #zhangjie-box .zhangjie-box.bg-two {
-    background: #FFE9B0; }
-  #zhangjie-box .zhangjie-box.bg-three {
-    background: #D8A764; }
-  #zhangjie-box .zhangjie-box.bg-four {
-    background: #3876AC; }
-  #zhangjie-box .zhangjie-box.bg-five {
-    background: #21858E; }
-  #zhangjie-box .zhangjie-box.bg-six {
-    background: #F4C5D4; }
-  #zhangjie-box .zhangjie-box.bg-seven {
-    background: #79D143; }
-  #zhangjie-box .zhangjie-box.bg-eight {
-    background: #fff; }
   #zhangjie-box .zhengwen3 {
     width: 100%;
     height: 100%;
@@ -220,6 +228,22 @@ a {
       float: left; }
     #zhangjie-box .yejiao .yejiao-right {
       float: right; }
+  #zhangjie-box .yejiao.bg-one {
+    background: #FCF3DB; }
+  #zhangjie-box .yejiao.bg-two {
+    background: #FFE9B0; }
+  #zhangjie-box .yejiao.bg-three {
+    background: #D8A764; }
+  #zhangjie-box .yejiao.bg-four {
+    background: #3876AC; }
+  #zhangjie-box .yejiao.bg-five {
+    background: #21858E; }
+  #zhangjie-box .yejiao.bg-six {
+    background: #F4C5D4; }
+  #zhangjie-box .yejiao.bg-seven {
+    background: #79D143; }
+  #zhangjie-box .yejiao.bg-eight {
+    background: #fff; }
   #zhangjie-box .zj-foot.zj-foot-d {
     display: block; }
   #zhangjie-box .zj-foot {
@@ -415,8 +439,10 @@ a {
         margin-left: 0.2rem; }
         #zhangjie-box .bg .bg-tu li .bg-color {
           width: 0.55rem;
-          height: 0.55rem; }
-        #zhangjie-box .bg .bg-tu li .bg-color:hover {
+          height: 0.55rem;
+          text-align: center;
+          line-height: 0.55rem; }
+        #zhangjie-box .bg .bg-tu li .bg-color.bg-color-d {
           border: 0.04rem solid #41E441;
           border-radius: 0.04rem; }
         #zhangjie-box .bg .bg-tu li .bg-wenzi {

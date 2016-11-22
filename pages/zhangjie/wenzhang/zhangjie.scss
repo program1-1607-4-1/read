@@ -30,6 +30,30 @@
 //
 //}
 //} 
+    #zhangjie-box.bg-one {
+        background: #FCF3DB;
+    }
+    #zhangjie-box.bg-two {
+        background: #FFE9B0;
+    }
+    #zhangjie-box.bg-three {
+        background: #D8A764;
+    }
+    #zhangjie-box.bg-four {
+        background: #3876AC;
+    }
+    #zhangjie-box.bg-five {
+        background: #21858E;
+    }
+    #zhangjie-box.bg-six {
+        background: #F4C5D4;
+    }
+    #zhangjie-box.bg-seven {
+        background: #79D143;
+    }
+    #zhangjie-box.bg-eight {
+        background: #fff;
+    }
 #zhangjie-box {
     width: 100%;
     height: 100%;
@@ -40,30 +64,7 @@
     left: 0;
     right: 0;
     left: 0;
-    .zhangjie-box.bg-one {
-        background: #FCF3DB;
-    }
-    .zhangjie-box.bg-two {
-        background: #FFE9B0;
-    }
-    .zhangjie-box.bg-three {
-        background: #D8A764;
-    }
-    .zhangjie-box.bg-four {
-        background: #3876AC;
-    }
-    .zhangjie-box.bg-five {
-        background: #21858E;
-    }
-    .zhangjie-box.bg-six {
-        background: #F4C5D4;
-    }
-    .zhangjie-box.bg-seven {
-        background: #79D143;
-    }
-    .zhangjie-box.bg-eight {
-        background: #fff;
-    }
+
     .zhengwen3 {
         width: 100%;
         height: 100%;
@@ -256,6 +257,7 @@
             left: 0.5rem;
             right: 0.5rem;
         };
+
         font-size: 0.21rem;
         .yejiao-left {
             float: left;
@@ -263,6 +265,30 @@
         .yejiao-right {
             float: right;
         }
+    }
+    .yejiao.bg-one {
+        background: #FCF3DB;
+    }
+    .yejiao.bg-two {
+        background: #FFE9B0;
+    }
+    .yejiao.bg-three {
+        background: #D8A764;
+    }
+     .yejiao.bg-four {
+        background: #3876AC;
+    }
+     .yejiao.bg-five {
+        background: #21858E;
+    }
+     .yejiao.bg-six {
+        background: #F4C5D4;
+    }
+    .yejiao.bg-seven {
+        background: #79D143;
+    }
+    .yejiao.bg-eight {
+        background: #fff;
     }
     //页脚
    .zj-foot.zj-foot-d {
@@ -509,8 +535,10 @@
                 .bg-color {
                     width: 0.55rem;
                     height: 0.55rem;
+                    text-align: center;
+                    line-height: 0.55rem;
                 }
-                .bg-color:hover {
+                .bg-color.bg-color-d{
                     border: 0.04rem solid #41E441;
                     border-radius: 0.04rem;
                 }

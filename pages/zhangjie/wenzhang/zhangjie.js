@@ -92,35 +92,43 @@ app.controller("wenzhangCtrl",["$scope",function($scope){
 	$scope.shuzu=[
 	{
 		color:"bg-one",
-		wenzi:"纯色羊皮"
+		wenzi:"纯色羊皮",
+		more:''
 	},
 	{
 		color:"bg-two",
-		wenzi:"经典一"
+		wenzi:"经典一",
+		more:''
 	},
 	{
 		color:"bg-three",
-		wenzi:"经典二"
+		wenzi:"经典二",
+		more:''
 	},
 	{
 		color:"bg-four",
-		wenzi:"蓝色图腾"
+		wenzi:"蓝色图腾",
+		more:''
 	},
 	{
 		color:"bg-five",
-		wenzi:"美丽星空"
+		wenzi:"美丽星空",
+		more:''
 	},
 	{
 		color:"bg-six",
-		wenzi:"少女情怀"
+		wenzi:"少女情怀",
+		more:''
 	},
 	{
 		color:"bg-seven",
-		wenzi:"养眼绿色"
+		wenzi:"养眼绿色",
+		more:''
 	},
 	{
 		color:"bg-eight",
-		wenzi:"自定义"
+		wenzi:"自定义",
+		more:'+'
 	}
 	];
 		
@@ -164,7 +172,16 @@ app.controller("wenzhangCtrl",["$scope",function($scope){
 		 zj_footer.removeClass("zj-footer-d")
 		shezhi_list.addClass("shezhi-d")
 	}
-   
+   $scope.colAdd=function(index){
+		$(".bg-color").removeClass("bg-color-d")
+		$(".bg-color").eq(index).addClass("bg-color-d")
+		console.log($(".bg-color").eq(index))
+		var col=$scope.shuzu[index].color
+		$("#zhangjie-box").attr("class","")
+		$(".yejiao").attr("class","yejiao")
+		$("#zhangjie-box").addClass(col)
+		$(".yejiao").addClass(col)
+	}
    
    
    
