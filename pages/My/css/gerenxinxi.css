@@ -73,8 +73,13 @@ a {
     left: 0.25rem;
     margin: auto;
     z-index: 33; }
-  .head .shezhi {
-    transform: scale(0.5); }
+    .head .z .shezhi {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -0.25rem;
+      margin: auto;
+      transform: scale(0.5); }
   .head .y {
     display: block;
     position: absolute;
@@ -126,7 +131,7 @@ a {
   width: 100%;
   height: 3.7rem; }
 
-ul {
+.U {
   width: 7.1rem;
   height: 3.7rem;
   border: 2px solid #EBEBEB;
@@ -136,18 +141,47 @@ ul {
   margin: auto;
   margin-top: 0.3rem;
   background: #fff; }
-  ul li {
+  .U .L {
     width: 100%;
     height: 25%;
     border-bottom: 1px dashed #C5C5C5; }
-    ul li img {
+    .U .L a {
+      display: block; }
+      .U .L a img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.08rem;
+        margin: auto;
+        transform: scale(0.5); }
+      .U .L a .s-y {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0.1rem;
+        margin: auto;
+        font-size: 0.25rem;
+        color: #3D3D3D;
+        line-height: 0.925rem; }
+        .U .L a .s-y .icon {
+          color: #AEDDF1; }
+      .U .L a .china {
+        color: #3D3D3D;
+        font-size: 0.25rem;
+        padding-left: 0.8rem;
+        padding-top: 0.15rem; }
+      .U .L a .english {
+        color: #3D3D3D;
+        font-size: 0.125rem;
+        padding-left: 0.8rem; }
+    .U .L .l-box img {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0.08rem;
       margin: auto;
       transform: scale(0.5); }
-    ul li .s-y {
+    .U .L .l-box .s-y {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -156,18 +190,18 @@ ul {
       font-size: 0.25rem;
       color: #3D3D3D;
       line-height: 0.925rem; }
-      ul li .s-y .icon {
+      .U .L .l-box .s-y .icon {
         color: #AEDDF1; }
-    ul li .china {
+    .U .L .l-box .china {
       color: #3D3D3D;
       font-size: 0.25rem;
       padding-left: 0.8rem;
       padding-top: 0.15rem; }
-    ul li .english {
+    .U .L .l-box .english {
       color: #3D3D3D;
       font-size: 0.125rem;
       padding-left: 0.8rem; }
-  ul .last {
+  .U .last {
     border: 0; }
 
 .foot {
@@ -177,29 +211,37 @@ ul {
   left: 0;
   bottom: 0;
   background: #151C2B; }
-  .foot li {
+  .foot a {
+    display: block;
     width: 33.3%;
     height: 100%;
-    border: 0;
-    border-right: 1px solid #515357;
-    color: #626366;
-    font-size: 0.25rem;
     float: left;
-    text-align: center;
-    padding-top: 0.08rem;
-    cursor: pointer; }
-    .foot li .icon {
-      font-size: 0.5rem; }
-  .foot .last {
-    border: 0;
-    color: #F3F3F5; }
+    z-index: 333; }
+    .foot a .LL {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-right: 1px solid #515357;
+      color: #626366;
+      font-size: 0.25rem;
+      float: left;
+      text-align: center;
+      padding-top: 0.08rem;
+      cursor: pointer; }
+      .foot a .LL .icon {
+        font-size: 0.5rem; }
+    .foot a .last {
+      border: 0;
+      color: #F3F3F5; }
 
 .box {
   width: 100%;
-  height: 13rem;
+  height: 100%;
   background: rgba(3, 3, 3, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
   transition: all 0.5s;
   transform: scale(0); }
@@ -254,5 +296,6 @@ ul {
         padding-top: 0.1rem;
         text-align: center; }
 
-.xian {
-  transform: scale(1); }
+.xian1 {
+  transform: scale(1);
+  z-index: 10000; }

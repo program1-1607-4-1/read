@@ -33,15 +33,16 @@ a{
          left: 0.25rem;
          margin: auto;
           z-index: 33;
+          .shezhi{
+                 position: absolute;
+                 top:0;
+                 bottom: 0;
+                 left: -0.25rem;
+                 margin: auto;
+                 transform: scale(0.5);
+             }
      }
-     .shezhi{
-//       position: absolute;
-//       top:0;
-//       bottom: 0;
-//       left: 0.25rem;
-//       margin: auto;
-         transform: scale(0.5);
-     }
+     
      .y{
           display: block;
          position: absolute;
@@ -106,49 +107,86 @@ a{
      width: 100%;
      height: 3.7rem;
 }
-    ul{
+    .U{
         width: 7.1rem;
         height: 3.7rem;
         border: 2px solid #EBEBEB;
         @include lr;
         margin-top: 0.3rem;
         background: #fff;
-        li{
+        .L{
             width: 100%;
             height: 25%;
             border-bottom: 1px dashed #C5C5C5;
-            img{
-                position: absolute;
-                 top:0;
-                 bottom: 0;
-                 left: 0.08rem;
-                 margin: auto;
-                 transform: scale(0.5);
+            a{
+                display: block;
+                img{
+                    position: absolute;
+                     top:0;
+                     bottom: 0;
+                     left: 0.08rem;
+                     margin: auto;
+                     transform: scale(0.5);
+                }
+                .s-y{
+                     position: absolute;
+                     top:0;
+                     bottom: 0;
+                     right: 0.1rem;
+                     margin: auto;
+                     font-size: 0.25rem;
+                     color: #3D3D3D;
+                     line-height: 0.925rem;
+                     .icon{
+                         color: #AEDDF1;
+                     }
+                }
+                .china{
+                    color: #3D3D3D;
+                    font-size:0.25rem;
+                    padding-left: 0.8rem;
+                    padding-top: 0.15rem;
+                }
+                .english{
+                    color: #3D3D3D;
+                    font-size:0.125rem;
+                    padding-left: 0.8rem;
+                }
             }
-            .s-y{
-                 position: absolute;
-                 top:0;
-                 bottom: 0;
-                 right: 0.1rem;
-                 margin: auto;
-                 font-size: 0.25rem;
-                 color: #3D3D3D;
-                 line-height: 0.925rem;
-                 .icon{
-                     color: #AEDDF1;
-                 }
-            }
-            .china{
-                color: #3D3D3D;
-                font-size:0.25rem;
-                padding-left: 0.8rem;
-                padding-top: 0.15rem;
-            }
-            .english{
-                color: #3D3D3D;
-                font-size:0.125rem;
-                padding-left: 0.8rem;
-            }
+           .l-box {
+                img{
+                    position: absolute;
+                     top:0;
+                     bottom: 0;
+                     left: 0.08rem;
+                     margin: auto;
+                     transform: scale(0.5);
+                }
+                .s-y{
+                     position: absolute;
+                     top:0;
+                     bottom: 0;
+                     right: 0.1rem;
+                     margin: auto;
+                     font-size: 0.25rem;
+                     color: #3D3D3D;
+                     line-height: 0.925rem;
+                     .icon{
+                         color: #AEDDF1;
+                     }
+                }
+                .china{
+                    color: #3D3D3D;
+                    font-size:0.25rem;
+                    padding-left: 0.8rem;
+                    padding-top: 0.15rem;
+                }
+                .english{
+                    color: #3D3D3D;
+                    font-size:0.125rem;
+                    padding-left: 0.8rem;
+                }
+           }
         }
        .last{
             border: 0;
@@ -161,8 +199,14 @@ a{
       left: 0;
       bottom: 0;
       background: #151C2B;
-      li{
+      a{
+          display: block;
           width: 33.3%;
+          height: 100%;
+          float: left;
+          z-index: 333;
+      .LL{
+          width: 100%;
           height: 100%;
           border: 0;
           border-right: 1px solid #515357;
@@ -180,14 +224,16 @@ a{
           border: 0;
           color: #F3F3F5;
       }
-  }
-
+   }
+ }
 .box{
     width: 100%;
-    height: 13rem;
+    height: 100%;
     background: rgba(3,3,3,0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
+    right: 0;
     left: 0;
     transition: all 0.5s;
     transform: scale(0);
@@ -246,8 +292,9 @@ a{
         }
     }
 }
-.xian{
+.xian1{
     transform: scale(1);
+    z-index: 10000;
 }
 
 

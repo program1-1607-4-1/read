@@ -1,5 +1,17 @@
 app.config(["$routeProvider",function($routeProvider){
-    $routeProvider.when("/tuijian",{
+    $routeProvider.when("/zhuce",{
+        templateUrl:"pages/denglu/zhuce.html",
+        controller:"zhuceCtrl"
+    }).when("/zhuce1",{
+        templateUrl:"pages/denglu/zhuce1.html",
+        controller:"zhuce1Ctrl"
+    }).when("/zhuce2",{
+        templateUrl:"pages/denglu/zhuce2.html",
+        controller:"zhuce2Ctrl"
+    }).when("/zhuce3",{
+        templateUrl:"pages/denglu/zhuce3.html",
+        controller:"zhuce3Ctrl"
+    }).when("/tuijian",{
         templateUrl:"pages/My/tuijian/tuijian.html",
         controller:"tuijianCtrl"
     }).when("/gerenxinxi",{
@@ -15,7 +27,7 @@ app.config(["$routeProvider",function($routeProvider){
         templateUrl:"pages/My/shezhi/shezhi.html",
         controller:"shezhiCtrl"
     }).when("/wodexiaoxi",{
-        templateUrl:"pages/wode/wodexiaoxi/wodexiaoxi.html",
+        templateUrl:"pages/wode/wodexinxi/wodexiaoxi.html",
         controller:"wodexiaoxiCtrl"
     }).when("/wodeziliao",{
         templateUrl:"pages/wode/wodeziliao/wodeziliao.html",
@@ -29,10 +41,22 @@ app.config(["$routeProvider",function($routeProvider){
     }).when("/mulu",{
         templateUrl:"pages/zhangjie/mulu/mulu.html",
         controller:"muluCtrl"
-    }).when("/shuye1",{
+    }).when("/",{
+        templateUrl:"pages/bookshelf/shujia/shujia.html",
+        controller:"shujiaCtrl"
+    }).when("/findlist",{
+            templateUrl:"pages/bookshelf/findList/findList.html",
+            controller:"findlistCtrl"
+        }).when("/finddata",{
+            templateUrl:"pages/bookshelf/findData/findData.html",
+            controller:"finddataCtrl"
+        }).when("/filterl",{
+            templateUrl:"pages/bookshelf/filterl/filterl.html",
+            controller:"filterlCtrl"
+        }).when("/shuye1",{
         templateUrl:"pages/book-page/shuye1/shuye.html",
         controller:"shuye1Ctrl"
-    }).when('/shuye3',{
+    }).when('/shuye1/shuye3',{
         templateUrl:"pages/book-page/shuye3/shuye.html",
         controller:"shuye3Ctrl"
     }).when('/shuye6',{

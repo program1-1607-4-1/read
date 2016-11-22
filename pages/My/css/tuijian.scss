@@ -15,21 +15,28 @@
 
 //头部
  .head{
-     
      width: 100%;
      height: 1.1rem;
      background: #2BA6DC;
      padding-left: 0.25rem;
      padding-right: 0.25rem;
      padding-top: 0.2rem;
-     text-align: center;
-     .shezhi{
-         position: absolute;
-         top:0;
-         bottom: 0;
-         left: 0.5rem;
-         margin: auto;
-         
+//   text-align: center;
+     .shezhi_a{
+         @include tb;
+         left: 0.1rem;
+         display: block;
+         width: 100%;
+         height: 100%;
+         z-index: 100;
+         .shezhi_tuijian{
+             position: absolute;
+             top:0;
+             bottom: 0;
+             left: 0.5rem;
+             margin: auto;
+             
+         }
      }
      .china{
          font-size: 0.36rem;
@@ -45,6 +52,7 @@
  
  .text{
      width: 100%;
+     height: 100%;
      position: absolute;
      top: 1.8rem;
      left: 0;
@@ -77,12 +85,11 @@
      .qi{
          padding-left:1.9rem ;
      }
-     ul{
+     .div1{
           float: left;
           height: 0.62rem;
           margin-top:0.3rem ;
-
-         li{
+         .li{
              width: auto;
              height: 0.62rem;
              float: left;
@@ -97,7 +104,7 @@
              color: #838383;
               
          }
-         .ling{
+         .divng{
              background: #29A6DC;
              color: #fff;
              border: 0;
@@ -111,14 +118,7 @@
  }
 
 
-
-
-
-
-
-
-
-.tijiao{
+.tijiao_tuijian{
     width: 6rem;
     height: 0.74rem;
     background: #28DD8B;
