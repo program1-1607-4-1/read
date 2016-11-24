@@ -59,6 +59,7 @@ a {
 .mulu-list {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   position: relative; }
   .mulu-list .return1 {
     position: absolute;
@@ -103,9 +104,7 @@ a {
           bottom: 0;
           margin: auto;
           width: 1.65rem;
-          height: 0.7rem;
-          background: url("../../../img/zhangjie/baiyuanbg.png");
-          background-size: cover; }
+          height: 0.7rem; }
           .mulu-list .top .top-content .top-lis .cir h1 {
             position: absolute;
             left: 0;
@@ -126,6 +125,15 @@ a {
             text-align: center;
             text-transform: uppercase;
             bottom: 0; }
+      .mulu-list .top .top-content .cir.top-mulu {
+        background: url("../../../img/zhangjie/baiyuanbg.png");
+        background-size: cover; }
+      .mulu-list .top .top-content .cir.top-shu {
+        background: url("../../../img/zhangjie/baiyuanbg.png");
+        background-size: cover; }
+      .mulu-list .top .top-content .cir.top-bj {
+        background: url("../../../img/zhangjie/baiyuanbg.png");
+        background-size: cover; }
       .mulu-list .top .top-content .top-xian1 {
         height: 0.57rem;
         width: 1px;
@@ -183,12 +191,16 @@ a {
 
 .mulu-box {
   width: 100%;
-  height: 100%;
+  height: 13rem;
   position: relative; }
 
 .mulu-lists1 {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: none; }
+
+.mulu-lists1.m-list {
+  display: block; }
 
 .mulu-lists {
   width: 100%;
@@ -236,6 +248,9 @@ a {
   width: 100%;
   height: 100%;
   display: none; }
+
+.shuqian-list.s-list {
+  display: block; }
 
 .shuqian-num {
   width: 100%;
@@ -293,7 +308,7 @@ a {
 .shuqian-foot1 {
   position: absolute;
   bottom: 0.01rem;
-  left: 1.29rem;
+  left: 0rem;
   width: 6.27rem; }
   .shuqian-foot1 .sq-left1 {
     float: left; }
@@ -454,7 +469,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   display: none; }
+
+.biji-list.b-list {
+  display: block; }
 
 .shuqian-num {
   width: 100%;
@@ -549,7 +568,7 @@ a {
 .shuqian-foot {
   position: absolute;
   bottom: 0.01rem;
-  left: 1.24rem;
+  left: 0rem;
   width: 5.39rem; }
   .shuqian-foot .sq-left {
     float: left; }
