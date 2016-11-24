@@ -193,16 +193,17 @@ a {
     text-align: center;
     padding-top: 0.23rem; }
 
-.box {
+.bbox {
   width: 100%;
   height: 13rem;
   background: rgba(3, 3, 3, 0.5);
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5555;
   transition: all 0.5s;
   transform: scale(0); }
-  .box .tishi {
+  .bbox .tishi-1 {
     width: 4.8rem;
     height: 5.66rem;
     position: absolute;
@@ -212,32 +213,32 @@ a {
     background: #fff;
     border-radius: 0.2rem;
     top: 3.24rem; }
-    .box .tishi .top {
+    .bbox .tishi-1 .top {
       width: 100%;
       height: 15%;
       border-top-left-radius: 0.2rem;
       border-top-right-radius: 0.2rem;
       background: #27D4B5; }
-      .box .tishi .top img {
+      .bbox .tishi-1 .top img {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0.6rem;
         margin: auto;
         transform: scale(0.5); }
-      .box .tishi .top .china {
+      .bbox .tishi-1 .top .china {
         color: #E9FBF7;
         font-size: 0.25rem;
         padding-left: 1.2rem;
         padding-top: 0.1rem; }
-      .box .tishi .top .english {
+      .bbox .tishi-1 .top .english {
         color: #E9FBF7;
         font-size: 0.125rem;
         padding-left: 1.2rem; }
-    .box .tishi .bottom {
+    .bbox .tishi-1 .bottom {
       width: 100%;
       height: 75%; }
-      .box .tishi .bottom .xiuxi-tan {
+      .bbox .tishi-1 .bottom .xiuxi-tan {
         width: 95%;
         height: 3.3rem;
         border: 0;
@@ -247,20 +248,20 @@ a {
         margin: auto;
         border-radius: 5px;
         background: #fff; }
-        .box .tishi .bottom .xiuxi-tan .xiuxi-li {
+        .bbox .tishi-1 .bottom .xiuxi-tan .xiuxi-li {
           width: 100%;
           height: 25%;
           border-bottom: 1px dashed #C5C5C5; }
-          .box .tishi .bottom .xiuxi-tan .xiuxi-li .china {
+          .bbox .tishi-1 .bottom .xiuxi-tan .xiuxi-li .china {
             color: #3D3D3D;
             font-size: 0.25rem;
             padding-left: 0.2rem;
             padding-top: 0.1rem; }
-          .box .tishi .bottom .xiuxi-tan .xiuxi-li .english {
+          .bbox .tishi-1 .bottom .xiuxi-tan .xiuxi-li .english {
             color: #959595;
             font-size: 0.125rem;
             padding-left: 0.2rem; }
-          .box .tishi .bottom .xiuxi-tan .xiuxi-li .cri {
+          .bbox .tishi-1 .bottom .xiuxi-tan .xiuxi-li .cri {
             width: 0.35rem;
             height: 0.35rem;
             position: absolute;
@@ -271,12 +272,12 @@ a {
             border: 1px solid #98EEDF;
             border-radius: 50%;
             padding: 0.08rem; }
-            .box .tishi .bottom .xiuxi-tan .xiuxi-li .cri .xin {
+            .bbox .tishi-1 .bottom .xiuxi-tan .xiuxi-li .cri .xin {
               width: 0.16rem;
               height: 0.16rem;
               border-radius: 50%;
               background: #98EEDF; }
-      .box .tishi .bottom .quxiao {
+      .bbox .tishi-1 .bottom .quxiao {
         width: 1.5rem;
         height: 0.6rem;
         background: #fff;
@@ -285,7 +286,7 @@ a {
         bottom: -0.2rem;
         left: 0.5rem;
         border: 1px solid #28DD8B; }
-        .box .tishi .bottom .quxiao .zuo {
+        .bbox .tishi-1 .bottom .quxiao .zuo {
           width: 5px;
           height: 5px;
           background: #28DD8B;
@@ -295,7 +296,7 @@ a {
           bottom: 0;
           left: 0.3rem;
           margin: auto; }
-        .box .tishi .bottom .quxiao .you {
+        .bbox .tishi-1 .bottom .quxiao .you {
           width: 5px;
           height: 5px;
           background: #28DD8B;
@@ -305,12 +306,12 @@ a {
           bottom: 0;
           right: 0.3rem;
           margin: auto; }
-        .box .tishi .bottom .quxiao .zi {
+        .bbox .tishi-1 .bottom .quxiao .zi {
           color: #28DD8B;
           font-size: 0.25rem;
           text-align: center;
           padding-top: 0.14rem; }
-      .box .tishi .bottom .queding {
+      .bbox .tishi-1 .bottom .queding {
         width: 1.5rem;
         height: 0.6rem;
         background: #28DD8B;
@@ -318,7 +319,7 @@ a {
         position: absolute;
         bottom: -0.2rem;
         right: 0.5rem; }
-        .box .tishi .bottom .queding .zuo {
+        .bbox .tishi-1 .bottom .queding .zuo {
           width: 5px;
           height: 5px;
           background: #fff;
@@ -328,7 +329,7 @@ a {
           bottom: 0;
           left: 0.3rem;
           margin: auto; }
-        .box .tishi .bottom .queding .you {
+        .bbox .tishi-1 .bottom .queding .you {
           width: 5px;
           height: 5px;
           background: #fff;
@@ -338,13 +339,13 @@ a {
           bottom: 0;
           right: 0.3rem;
           margin: auto; }
-        .box .tishi .bottom .queding .zi {
+        .bbox .tishi-1 .bottom .queding .zi {
           color: #fff;
           font-size: 0.25rem;
           text-align: center;
           padding-top: 0.14rem; }
 
-.xian {
+.xian-1 {
   transform: scale(1); }
 
 .muohu {
@@ -355,11 +356,12 @@ a {
   height: 13rem;
   background: rgba(3, 3, 3, 0.5);
   position: absolute;
+  z-index: 5555;
   top: 0;
   left: 0;
   transition: all 0.5s;
   transform: scale(0); }
-  .qingchu .tishi {
+  .qingchu .tishi-2 {
     width: 4.8rem;
     height: 5.66rem;
     position: absolute;
@@ -369,48 +371,48 @@ a {
     background: #fff;
     border-radius: 0.2rem;
     top: 3.24rem; }
-    .qingchu .tishi .top {
+    .qingchu .tishi-2 .top {
       width: 100%;
       height: 15%;
       border-top-left-radius: 0.2rem;
       border-top-right-radius: 0.2rem;
       background: #27D4B5; }
-      .qingchu .tishi .top .left {
+      .qingchu .tishi-2 .top .left {
         float: left; }
-        .qingchu .tishi .top .left img {
+        .qingchu .tishi-2 .top .left img {
           position: absolute;
           top: 0;
           bottom: 0;
           left: 0.6rem;
           margin: auto;
           transform: scale(0.5); }
-        .qingchu .tishi .top .left .china {
+        .qingchu .tishi-2 .top .left .china {
           color: #E9FBF7;
           font-size: 0.25rem;
           padding-left: 1.2rem;
           padding-top: 0.1rem; }
-        .qingchu .tishi .top .left .english {
+        .qingchu .tishi-2 .top .left .english {
           color: #E9FBF7;
           font-size: 0.125rem;
           padding-left: 1.2rem; }
-      .qingchu .tishi .top .right {
+      .qingchu .tishi-2 .top .right {
         float: right; }
-        .qingchu .tishi .top .right img {
+        .qingchu .tishi-2 .top .right img {
           position: absolute;
           top: 0.35rem;
           bottom: 0;
           right: 0.25rem;
           margin: auto;
           transform: scale(0.5); }
-        .qingchu .tishi .top .right .china {
+        .qingchu .tishi-2 .top .right .china {
           color: #E9FBF7;
           font-size: 0.125rem;
           padding-right: 0.8rem;
           padding-top: 0.3rem; }
-    .qingchu .tishi .bottom {
+    .qingchu .tishi-2 .bottom {
       width: 100%;
       height: 75%; }
-      .qingchu .tishi .bottom .qingchu-tan {
+      .qingchu .tishi-2 .bottom .qingchu-tan {
         width: 95%;
         height: 3.3rem;
         border: 0;
@@ -420,20 +422,20 @@ a {
         margin: auto;
         border-radius: 5px;
         background: #fff; }
-        .qingchu .tishi .bottom .qingchu-tan .qingchu-li {
+        .qingchu .tishi-2 .bottom .qingchu-tan .qingchu-li {
           width: 100%;
           height: 25%;
           border-bottom: 1px dashed #C5C5C5; }
-          .qingchu .tishi .bottom .qingchu-tan .qingchu-li .china {
+          .qingchu .tishi-2 .bottom .qingchu-tan .qingchu-li .china {
             color: #3D3D3D;
             font-size: 0.25rem;
             padding-left: 0.2rem;
             padding-top: 0.1rem; }
-          .qingchu .tishi .bottom .qingchu-tan .qingchu-li .english {
+          .qingchu .tishi-2 .bottom .qingchu-tan .qingchu-li .english {
             color: #959595;
             font-size: 0.125rem;
             padding-left: 0.2rem; }
-          .qingchu .tishi .bottom .qingchu-tan .qingchu-li .cri {
+          .qingchu .tishi-2 .bottom .qingchu-tan .qingchu-li .cri {
             width: 0.35rem;
             height: 0.35rem;
             position: absolute;
@@ -444,12 +446,12 @@ a {
             border: 1px solid #98EEDF;
             border-radius: 50%;
             padding: 0.08rem; }
-            .qingchu .tishi .bottom .qingchu-tan .qingchu-li .cri .xin {
+            .qingchu .tishi-2 .bottom .qingchu-tan .qingchu-li .cri .xin {
               width: 0.16rem;
               height: 0.16rem;
               border-radius: 50%;
               background: #98EEDF; }
-      .qingchu .tishi .bottom .quxiao {
+      .qingchu .tishi-2 .bottom .quxiao {
         width: 1.5rem;
         height: 0.6rem;
         background: #fff;
@@ -458,7 +460,7 @@ a {
         bottom: -0.2rem;
         left: 0.5rem;
         border: 1px solid #28DD8B; }
-        .qingchu .tishi .bottom .quxiao .zuo {
+        .qingchu .tishi-2 .bottom .quxiao .zuo {
           width: 5px;
           height: 5px;
           background: #28DD8B;
@@ -468,7 +470,7 @@ a {
           bottom: 0;
           left: 0.3rem;
           margin: auto; }
-        .qingchu .tishi .bottom .quxiao .you {
+        .qingchu .tishi-2 .bottom .quxiao .you {
           width: 5px;
           height: 5px;
           background: #28DD8B;
@@ -478,12 +480,12 @@ a {
           bottom: 0;
           right: 0.3rem;
           margin: auto; }
-        .qingchu .tishi .bottom .quxiao .zi {
+        .qingchu .tishi-2 .bottom .quxiao .zi {
           color: #28DD8B;
           font-size: 0.25rem;
           text-align: center;
           padding-top: 0.14rem; }
-      .qingchu .tishi .bottom .queding {
+      .qingchu .tishi-2 .bottom .queding {
         width: 1.5rem;
         height: 0.6rem;
         background: #28DD8B;
@@ -491,7 +493,7 @@ a {
         position: absolute;
         bottom: -0.2rem;
         right: 0.5rem; }
-        .qingchu .tishi .bottom .queding .zuo {
+        .qingchu .tishi-2 .bottom .queding .zuo {
           width: 5px;
           height: 5px;
           background: #fff;
@@ -501,7 +503,7 @@ a {
           bottom: 0;
           left: 0.3rem;
           margin: auto; }
-        .qingchu .tishi .bottom .queding .you {
+        .qingchu .tishi-2 .bottom .queding .you {
           width: 5px;
           height: 5px;
           background: #fff;
@@ -511,11 +513,11 @@ a {
           bottom: 0;
           right: 0.3rem;
           margin: auto; }
-        .qingchu .tishi .bottom .queding .zi {
+        .qingchu .tishi-2 .bottom .queding .zi {
           color: #fff;
           font-size: 0.25rem;
           text-align: center;
           padding-top: 0.14rem; }
 
-.show {
+.show-1 {
   transform: scale(1); }
